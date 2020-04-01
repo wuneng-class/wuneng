@@ -12,4 +12,10 @@ public class BaseController {
         return vo;
     }
 
+    protected ResultVO success(Integer code){
+        ResultVO vo=new ResultVO();
+        vo.setCode(code);
+        return vo;
+    }
+
 }

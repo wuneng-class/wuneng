@@ -17,45 +17,45 @@
 
 
  
-<form class="layui-form" action="">
+<form class="layui-form" id="form-upload">
   <div class="layui-form-item">
     <label class="layui-form-label">课程ID</label>
     <div class="layui-input-block">
-      <input type="text" name="id" lay-verify="title" autocomplete="off" placeholder="请输入课程ID" class="layui-input">
+      <input type="text" name="cid" lay-verify="title" autocomplete="off" placeholder="请输入课程ID" class="layui-input">
     </div>
   </div>
   <div class="layui-form-item">
     <label class="layui-form-label">课程名称</label>
     <div class="layui-input-block">
-      <input type="text" name="name" lay-verify="required" lay-reqtext="岂能为空？" placeholder="请输入课程名" autocomplete="off" class="layui-input">
+      <input type="text" name="cname" lay-verify="required" lay-reqtext="岂能为空？" placeholder="请输入课程名" autocomplete="off" class="layui-input">
     </div>
   </div>
 
   <div class="layui-form-item">
     <label class="layui-form-label">课程简介</label>
     <div class="layui-input-block">
-      <input type="text" name="context" lay-verify="required" lay-reqtext="岂能为空？" placeholder="请输入课程简介" autocomplete="off" class="layui-input">
+      <input type="text" name="cintroduct" lay-verify="required" lay-reqtext="岂能为空？" placeholder="请输入课程简介" autocomplete="off" class="layui-input">
     </div>
   </div>
 
   <div class="layui-form-item">
     <label class="layui-form-label">课程封面</label>
     <div class="layui-input-block">
-      <input type="file" class="layui-btn layui-btn-warm" name="img1" lay-verify="required"  autocomplete="off" >
+      <input type="file" class="layui-btn layui-btn-warm" name="cimg1" lay-verify="required"  autocomplete="off" >
     </div>
   </div>
 
   <div class="layui-form-item">
     <label class="layui-form-label">课程广告图1</label>
     <div class="layui-input-block">
-      <input type="file" class="layui-btn layui-btn-danger" name="img2" lay-verify="required"  autocomplete="off" >
+      <input type="file" class="layui-btn layui-btn-danger" name="cimg2" lay-verify="required"  autocomplete="off" >
     </div>
   </div>
 
   <div class="layui-form-item">
     <label class="layui-form-label">课程广告图2</label>
     <div class="layui-input-block">
-      <input type="file" class="layui-btn layui-btn-danger" name="img3" lay-verify="required"  autocomplete="off" >
+      <input type="file" class="layui-btn layui-btn-danger" name="cimg3" lay-verify="required"  autocomplete="off" >
     </div>
   </div>
   <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
@@ -63,7 +63,7 @@
 </fieldset>
 <div class="layui-form-item">
     <div class="layui-input-block">
-      <input id="file1" type="file" multiple="multiple" class="layui-btn" name="files" lay-verify="required"  autocomplete="off" >
+      <input id="file1" type="file" multiple="multiple" class="layui-btn" name="file" lay-verify="required"  autocomplete="off" >
     </div>
   </div>
   <ul class="layui-timeline" id="file1Change">
@@ -83,7 +83,7 @@
 </fieldset>
 <div class="layui-form-item">
     <div class="layui-input-block">
-      <button type="button" class="layui-btn layui-btn-normal">上传</button>
+      <button type="button" id="btnUpload" class="layui-btn layui-btn-normal">上传</button>
       <button type="button" class="layui-btn layui-btn-normal">重置</button>
     </div>
   </div>
@@ -91,6 +91,25 @@
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 <script src="layui/layui.js" charset="utf-8"></script>
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+  $('#btnUpload').on('click',function(){
+    var formData=new FormData($('#form-upload')[0])
+    $.ajax({
+      url:'upload_course',
+      method:'post',
+      data:formData,
+      processData:false,
+      contentType:false,
+      success(res){
+        if(res.code==200){
+          alert('上传成功');
+        }else{
+          alert('上传失败')
+        }
+      }
+    })
+  })
+</script>
 <script>
   var tes=document.getElementById('file1');
   tes.addEventListener('change',function(){
