@@ -15,7 +15,7 @@ import java.util.List;
  * @author YXD
  * @date 2020/3/6
  */
-@Service("userService")
+@Service
 @Transactional(rollbackFor = RuntimeException.class)
 public class UserServiceImpl implements UserService {
     @Autowired

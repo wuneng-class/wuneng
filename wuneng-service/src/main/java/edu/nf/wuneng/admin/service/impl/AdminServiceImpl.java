@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
  * @author YXD
  * @date 2020/3/11
  */
-@Service("adminService")
+@Service()
 public class AdminServiceImpl implements AdminService {
     @Autowired
     private AdminDao adminDao;
