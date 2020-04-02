@@ -16,4 +16,12 @@
         select u_id,u_name,u_password,u_phone,u_head,sex,email from user
     </select>
 
+    <insert id="register" parameterType="edu.nf.wuneng.user.entity.Users">
+        insert into user(u_name,u_password,email) values(#{userName},#{userPassword},#{email})
+    </insert>
+
+    <select id="login" parameterType="string" resultMap="userMapper">
+        select u_id,u_name,u_password,email from user where email=#{email}
+    </select>
+
 </mapper>

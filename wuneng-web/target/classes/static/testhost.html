@@ -313,7 +313,25 @@
                 if(result.code==200){
                     $.each(result.data,function(i,o){
                         $.each(o.courseInfo,function(j,o1){
-
+                            $('#loadSpan').append(
+                                '<div class="row">'
+                                +'<div class="col-sm-2"></div>'
+                                +'<div class="col-sm-8" align="content">'
+                                +'<hr/>'
+                                +'<div class="col-sm-5">'
+                                +'</div>'
+                                +'<span class="font-s">'+o.name+'</span>'
+                                +'<hr/>'
+                                +'</div>'
+                                +'<div class="col-sm-2"></div>'
+                                +'</div>'
+                                +'<div class="row">'
+                                +' <div class="col-sm-3">'
+                                +'<a href=""><img src="'+o1.img+'" width="100%" height="100%"></a>'
+                                +'<p>'+o1.name+'</p>'
+                                +'</div>'
+                                +'</div>'
+                            )
                         })
                     })
                 }

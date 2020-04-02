@@ -14,4 +14,8 @@ import java.util.List;
 public interface UserDao {
     List<Users> listUsers(@Param("pageNum") Integer pageNum,@Param("pageSize") Integer pageSize);
 
+    Users login(String email);
+
+    void register(Users users);
+
 }
