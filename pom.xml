@@ -64,4 +64,14 @@
         </dependencies>
     </dependencyManagement>
 
+    <build>
+        <finalName>wuneng-web-1.0-SNAPSHOT.jar</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

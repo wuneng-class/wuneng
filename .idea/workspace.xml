@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e74b19ba-c898-41e5-9fee-9258f842a251" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/conf/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/conf/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/conf/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/conf/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/admin_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/admin_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/classInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/classInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/admin_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/admin_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/classInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/classInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +90,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
@@ -190,6 +194,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WunengApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wuneng-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.nf.wuneng.WunengApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.WunengApplication" />
@@ -252,7 +263,8 @@
       <workItem from="1585717437406" duration="3659000" />
       <workItem from="1585730510729" duration="1081000" />
       <workItem from="1585736543370" duration="13468000" />
-      <workItem from="1585788312482" duration="18750000" />
+      <workItem from="1585788312482" duration="20222000" />
+      <workItem from="1585826102107" duration="4979000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization project">
       <created>1583479332302</created>
@@ -303,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585815163924</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="登录">
+      <created>1585817626671</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585817626671</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,30 +353,34 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1584598271643" />
-    <state x="314" y="0" key="CommitChangelistDialog2" timestamp="1585815157522">
+    <state x="426" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585833186152">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1585815157522" />
+    <state x="426" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.738@0.0.1366.738" timestamp="1585833186152" />
+    <state x="314" y="0" key="CommitChangelistDialog2" timestamp="1585817625076">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1585817625076" />
     <state x="442" y="113" key="FileChooserDialogImpl" timestamp="1585792634669">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="442" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585792634669" />
-    <state width="1323" height="172" key="GridCell.Tab.0.bottom" timestamp="1585817542568">
+    <state width="1323" height="226" key="GridCell.Tab.0.bottom" timestamp="1585834287878">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585817542568" />
-    <state width="1323" height="172" key="GridCell.Tab.0.center" timestamp="1585817542567">
+    <state width="1323" height="226" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585834287878" />
+    <state width="1323" height="226" key="GridCell.Tab.0.center" timestamp="1585834287878">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585817542567" />
-    <state width="1323" height="172" key="GridCell.Tab.0.left" timestamp="1585817542564">
+    <state width="1323" height="226" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585834287878" />
+    <state width="1323" height="226" key="GridCell.Tab.0.left" timestamp="1585834287878">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585817542564" />
-    <state width="1323" height="172" key="GridCell.Tab.0.right" timestamp="1585817542567">
+    <state width="1323" height="226" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585834287878" />
+    <state width="1323" height="226" key="GridCell.Tab.0.right" timestamp="1585834287878">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585817542567" />
+    <state width="1323" height="226" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585834287878" />
     <state width="1323" height="165" key="GridCell.Tab.1.bottom" timestamp="1583926229130">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -386,10 +409,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="149" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585665301975" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1585815178183">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1585817652500">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1585815178183" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1585817652500" />
     <state x="363" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1583889742013">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

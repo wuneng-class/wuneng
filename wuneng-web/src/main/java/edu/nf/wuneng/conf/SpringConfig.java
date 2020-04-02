@@ -17,6 +17,7 @@ public class SpringConfig implements WebMvcConfigurer {
                 .addPathPatterns("/**")
                 .excludePathPatterns("/login.html",
                         "/index.html",
+                        "/video.html",
                         "/login",
                         "/register",
                         "/code",
@@ -30,7 +31,8 @@ public class SpringConfig implements WebMvcConfigurer {
                         "/plugins/**",
                         "/src/**",
                         "/assets/**",
-                        "video/**"
+                        "video/**",
+                        "/list_courseInfo"
                 );
     }
 }
