@@ -1,9 +1,7 @@
 package edu.nf.wuneng.admin.service.impl;
 
 import edu.nf.wuneng.admin.dao.AdminDao;
-import edu.nf.wuneng.admin.entity.Admin;
-import edu.nf.wuneng.admin.entity.Course;
-import edu.nf.wuneng.admin.entity.CourseAddr;
+import edu.nf.wuneng.admin.entity.*;
 import edu.nf.wuneng.admin.service.AdminService;
 import edu.nf.wuneng.exception.AccessException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,6 +42,24 @@ public class AdminServiceImpl implements AdminService {
             adminDao.addCourseAddr(courseAddr);
         } catch (Exception e) {
             throw new AccessException("添加失败");
+        }
+    }
+
+    @Override
+    public List<CourseCation> listCourseCation() {
+        try {
+            return adminDao.listCourseCation();
+        } catch (Exception e) {
+            throw new AccessException("服务器错误");
+        }
+    }
+
+    @Override
+    public List<CourseInfo> listCourseInfo() {
+        try {
+            return adminDao.listCourseInfo();
+        } catch (Exception e) {
+            throw new AccessException("服务器错误");
         }
     }
 }

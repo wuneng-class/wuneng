@@ -22,6 +22,29 @@
         <result property="caAddr" column="ca_addr"></result>
     </resultMap>
 
+    <resultMap id="courseCationMapper" type="edu.nf.wuneng.admin.entity.CourseCation">
+        <id property="id" column="cc_id"></id>
+        <result property="name" column="cc_name"></result>
+
+        <collection property="courseInfo" ofType="edu.nf.wuneng.admin.entity.CourseInfo">
+            <id property="id" column="ci_id"></id>
+            <result property="name" column="ci_name"></result>
+            <result property="context" column="ci_context"></result>
+            <result property="img" column="ci_img"></result>
+            <result property="addr" column="ci_addr"></result>
+            <result property="num" column="ci_num"></result>
+        </collection>
+    </resultMap>
+
+    <resultMap id="courseInfoMapper" type="edu.nf.wuneng.admin.entity.CourseInfo">
+        <id property="id" column="ci_id"></id>
+        <result property="name" column="ci_name"></result>
+        <result property="context" column="ci_context"></result>
+        <result property="img" column="ci_img"></result>
+        <result property="addr" column="ci_addr"></result>
+        <result property="num" column="ci_num"></result>
+    </resultMap>
+
     <select id="loginAdmin" resultMap="adminMapper">
         select a_id,a_name,a_password from admin where a_id=#{id}
     </select>
@@ -36,4 +59,12 @@
             (#{courseAddr.caId},#{courseAddr.caAddr})
         </foreach>
     </insert>
+
+    <select id="listCourseCation" resultMap="courseCationMapper">
+        select ci.ci_id,ci.ci_name,ci.ci_context,ci.ci_addr,ci.ci_num,cc.cc_id,cc.cc_name from course_info ci,course_cation cc
+    </select>
+
+    <select id="listCourseInfo" resultMap="courseInfoMapper">
+        select ci_id,ci_name,ci_context,ci_img,ci_addr,ci_num from course_info
+    </select>
 </mapper>

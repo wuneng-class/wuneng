@@ -1,8 +1,6 @@
 package edu.nf.wuneng.admin.dao;
 
-import edu.nf.wuneng.admin.entity.Admin;
-import edu.nf.wuneng.admin.entity.Course;
-import edu.nf.wuneng.admin.entity.CourseAddr;
+import edu.nf.wuneng.admin.entity.*;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -18,4 +16,8 @@ public interface AdminDao {
     void addCourse(Course course);
 
     void addCourseAddr(List<CourseAddr> courseAddr);
+
+    List<CourseCation> listCourseCation();
+
+    List<CourseInfo> listCourseInfo();
 }

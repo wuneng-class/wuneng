@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e74b19ba-c898-41e5-9fee-9258f842a251" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/admin/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/admin/dao/AdminDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/edu/nf/wuneng/admin/dao/AdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/target/classes/edu/nf/wuneng/admin/dao/AdminDao.class" afterDir="false" />
@@ -14,21 +13,11 @@
       <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/AdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-service/target/test-classes/edu/nf/wuneng/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/test-classes/edu/nf/wuneng/ServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/WunengApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/WunengApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/admin/web/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/admin/web/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/vo/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/vo/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/courseUpload.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/courseUpload.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/video.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/WunengApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/WunengApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/admin/web/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/admin/web/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/vo/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/vo/BaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/admin_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/admin_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/buypage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/hotsource.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/hotsource.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +43,8 @@
       <list>
         <option value="mybatis-mapper" />
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -99,7 +88,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wuneng-web/target/classes/static/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kec-project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -148,22 +137,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminServiceTest.testLoginAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wuneng-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.nf.wuneng.admin.service.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.nf.wuneng.admin.service.test" />
-      <option name="MAIN_CLASS_NAME" value="edu.nf.wuneng.admin.service.test.AdminServiceTest" />
-      <option name="METHOD_NAME" value="testLoginAdmin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ServiceTest.testAddCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wuneng-service" />
       <extension name="coverage">
@@ -196,7 +169,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.testLoginAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.testListCourseCation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wuneng-service" />
       <extension name="coverage">
         <pattern>
@@ -206,7 +179,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.nf.wuneng" />
       <option name="MAIN_CLASS_NAME" value="edu.nf.wuneng.ServiceTest" />
-      <option name="METHOD_NAME" value="testLoginAdmin" />
+      <option name="METHOD_NAME" value="testListCourseCation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.testListCourseInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wuneng-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.wuneng.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.wuneng" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.wuneng.ServiceTest" />
+      <option name="METHOD_NAME" value="testListCourseInfo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -215,10 +204,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.WunengApplication" />
+        <item itemvalue="JUnit.ServiceTest.testListCourseCation" />
+        <item itemvalue="JUnit.ServiceTest.testListCourseInfo" />
         <item itemvalue="JUnit.ServiceTest.testAddCourseAddr" />
         <item itemvalue="JUnit.ServiceTest.testAddCourse" />
-        <item itemvalue="JUnit.ServiceTest.testLoginAdmin" />
-        <item itemvalue="JUnit.AdminServiceTest.testLoginAdmin" />
       </list>
     </recent_temporary>
   </component>
@@ -273,7 +262,8 @@
       <workItem from="1585704311777" duration="598000" />
       <workItem from="1585717437406" duration="3659000" />
       <workItem from="1585730510729" duration="1081000" />
-      <workItem from="1585736543370" duration="11026000" />
+      <workItem from="1585736543370" duration="13468000" />
+      <workItem from="1585788312482" duration="8112000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization project">
       <created>1583479332302</created>
@@ -303,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585718351138</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bug修复">
+      <created>1585754578646</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585754578646</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,45 +310,50 @@
     <MESSAGE value="Initialization project" />
     <MESSAGE value="添加主页和后台页面" />
     <MESSAGE value="更新界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新界面" />
+    <MESSAGE value="bug修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug修复" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="27" key="#Notifications" timestamp="1585754683440">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="27" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1585754683440" />
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584198635976">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1584198635976" />
-    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1585745206304">
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1585790395201">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1585745206304" />
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1585790395201" />
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584598271643">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1584598271643" />
-    <state x="314" y="0" key="CommitChangelistDialog2" timestamp="1585718344842">
+    <state x="314" y="0" key="CommitChangelistDialog2" timestamp="1585754572116">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1585718344842" />
-    <state x="442" y="113" key="FileChooserDialogImpl" timestamp="1585744879068">
+    <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1585754572116" />
+    <state x="442" y="113" key="FileChooserDialogImpl" timestamp="1585792634669">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="442" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585744879068" />
-    <state width="1323" height="100" key="GridCell.Tab.0.bottom" timestamp="1585748231416">
+    <state x="442" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585792634669" />
+    <state width="1323" height="198" key="GridCell.Tab.0.bottom" timestamp="1585795131312">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="100" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585748231416" />
-    <state width="1323" height="100" key="GridCell.Tab.0.center" timestamp="1585748231416">
+    <state width="1323" height="198" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585795131312" />
+    <state width="1323" height="198" key="GridCell.Tab.0.center" timestamp="1585795131312">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="100" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585748231416" />
-    <state width="1323" height="100" key="GridCell.Tab.0.left" timestamp="1585748231416">
+    <state width="1323" height="198" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585795131312" />
+    <state width="1323" height="198" key="GridCell.Tab.0.left" timestamp="1585795131312">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="100" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585748231416" />
-    <state width="1323" height="100" key="GridCell.Tab.0.right" timestamp="1585748231416">
+    <state width="1323" height="198" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585795131312" />
+    <state width="1323" height="198" key="GridCell.Tab.0.right" timestamp="1585795131312">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="100" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585748231416" />
+    <state width="1323" height="198" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585795131312" />
     <state width="1323" height="165" key="GridCell.Tab.1.bottom" timestamp="1583926229130">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -380,10 +382,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="149" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585665301975" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1585718367944">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1585754640673">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1585718367944" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1585754640673" />
     <state x="363" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1583889742013">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

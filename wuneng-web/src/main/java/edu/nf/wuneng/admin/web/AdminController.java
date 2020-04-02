@@ -1,8 +1,6 @@
 package edu.nf.wuneng.admin.web;
 
-import edu.nf.wuneng.admin.entity.Admin;
-import edu.nf.wuneng.admin.entity.Course;
-import edu.nf.wuneng.admin.entity.CourseAddr;
+import edu.nf.wuneng.admin.entity.*;
 import edu.nf.wuneng.admin.service.AdminService;
 import edu.nf.wuneng.conf.UploadVideo;
 import edu.nf.wuneng.vo.BaseController;
@@ -44,6 +42,17 @@ public class AdminController extends BaseController {
         return "success";
     }
 
+    /**
+     * 课程上传
+     * @param cid
+     * @param cname
+     * @param cintroduct
+     * @param cimg1
+     * @param cimg2
+     * @param cimg3
+     * @param file
+     * @return
+     */
     @RequestMapping("/upload_course")
     public ResultVO uploadCourse(Integer cid,String cname,String cintroduct,MultipartFile cimg1,MultipartFile cimg2,MultipartFile cimg3,MultipartFile[] file){
         System.out.println(cid);
@@ -74,5 +83,17 @@ public class AdminController extends BaseController {
         adminService.addCourse(course);
         adminService.addCourseAddr(list);
         return success(200);
+    }
+
+    @RequestMapping("/list_courseCation")
+    public ResultVO<List<CourseCation>> listCourseCation(){
+        List<CourseCation> courseCations = adminService.listCourseCation();
+        return success(courseCations);
+    }
+
+    @RequestMapping("/list_courseInfo")
+    public ResultVO<List<CourseInfo>> listCourseInfo(){
+        List<CourseInfo> courseInfos = adminService.listCourseInfo();
+        return success(courseInfos);
     }
 }

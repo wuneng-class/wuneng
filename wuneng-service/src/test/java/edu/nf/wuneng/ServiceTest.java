@@ -1,8 +1,6 @@
 package edu.nf.wuneng;
 
-import edu.nf.wuneng.admin.entity.Admin;
-import edu.nf.wuneng.admin.entity.Course;
-import edu.nf.wuneng.admin.entity.CourseAddr;
+import edu.nf.wuneng.admin.entity.*;
 import edu.nf.wuneng.admin.service.AdminService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,5 +50,24 @@ public class ServiceTest {
         list.add(c1);
         list.add(c2);
         adminService.addCourseAddr(list);
+    }
+
+    @Test
+    void testListCourseCation(){
+        List<CourseCation> courseCations = adminService.listCourseCation();
+        for (CourseCation courseCation : courseCations) {
+            System.out.println("1:"+courseCation.getName());
+            for (CourseInfo courseInfo : courseCation.getCourseInfo()) {
+                System.out.println("2:"+courseInfo.getName());
+            }
+        }
+    }
+
+    @Test
+    void testListCourseInfo(){
+        List<CourseInfo> courseInfos = adminService.listCourseInfo();
+        for (CourseInfo courseInfo : courseInfos) {
+            System.out.println(courseInfo.getNum());
+        }
     }
 }
