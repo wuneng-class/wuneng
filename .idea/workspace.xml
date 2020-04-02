@@ -3,58 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e74b19ba-c898-41e5-9fee-9258f842a251" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/user/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/edu/nf/wuneng/user/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/target/classes/edu/nf/wuneng/user/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/target/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/wuneng-dao-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/wuneng-entity-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/src/test/java/edu/nf/wuneng/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/test/java/edu/nf/wuneng/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/user/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/user/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/user/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/surefire-reports/2020-03-31T22-32-43_214-jvmRun1.dump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/surefire-reports/TEST-edu.nf.wuneng.ServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/surefire-reports/edu.nf.wuneng.ServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/test-classes/edu/nf/wuneng/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/test-classes/edu/nf/wuneng/ServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/wuneng-service-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-util/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-util/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-util/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-util/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-util/target/wuneng-util-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/user/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/user/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/vo/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/vo/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/conf/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/conf/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/user/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/user/web/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/vo/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/vo/BaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/conf/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/conf/SpringConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/testhost.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/testhost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/wuneng-web-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +252,7 @@
       <workItem from="1585717437406" duration="3659000" />
       <workItem from="1585730510729" duration="1081000" />
       <workItem from="1585736543370" duration="13468000" />
-      <workItem from="1585788312482" duration="16563000" />
+      <workItem from="1585788312482" duration="18750000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization project">
       <created>1583479332302</created>
@@ -344,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585806208646</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="登录">
+      <created>1585815163924</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585815163924</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +314,8 @@
     <MESSAGE value="添加主页和后台页面" />
     <MESSAGE value="更新界面" />
     <MESSAGE value="bug修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug修复" />
+    <MESSAGE value="登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Notifications" timestamp="1585754683440">
@@ -374,30 +334,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1584598271643" />
-    <state x="314" y="0" key="CommitChangelistDialog2" timestamp="1585806203339">
+    <state x="314" y="0" key="CommitChangelistDialog2" timestamp="1585815157522">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1585806203339" />
+    <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1585815157522" />
     <state x="442" y="113" key="FileChooserDialogImpl" timestamp="1585792634669">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="442" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585792634669" />
-    <state width="1323" height="118" key="GridCell.Tab.0.bottom" timestamp="1585815060409">
+    <state width="1323" height="172" key="GridCell.Tab.0.bottom" timestamp="1585817542568">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="118" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585815060409" />
-    <state width="1323" height="118" key="GridCell.Tab.0.center" timestamp="1585815060409">
+    <state width="1323" height="172" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585817542568" />
+    <state width="1323" height="172" key="GridCell.Tab.0.center" timestamp="1585817542567">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="118" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585815060409" />
-    <state width="1323" height="118" key="GridCell.Tab.0.left" timestamp="1585815060409">
+    <state width="1323" height="172" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585817542567" />
+    <state width="1323" height="172" key="GridCell.Tab.0.left" timestamp="1585817542564">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="118" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585815060409" />
-    <state width="1323" height="118" key="GridCell.Tab.0.right" timestamp="1585815060409">
+    <state width="1323" height="172" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585817542564" />
+    <state width="1323" height="172" key="GridCell.Tab.0.right" timestamp="1585817542567">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="118" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585815060409" />
+    <state width="1323" height="172" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585817542567" />
     <state width="1323" height="165" key="GridCell.Tab.1.bottom" timestamp="1583926229130">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -426,10 +386,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="149" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585665301975" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1585806220937">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1585815178183">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1585806220937" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1585815178183" />
     <state x="363" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1583889742013">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
