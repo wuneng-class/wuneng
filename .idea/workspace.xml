@@ -2,38 +2,639 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e74b19ba-c898-41e5-9fee-9258f842a251" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/css/sinaFaceAndEffec.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/admin/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/admin/dao/AdminDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/edu/nf/wuneng/admin/dao/AdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/target/classes/edu/nf/wuneng/admin/dao/AdminDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/target/classes/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/src/test/java/edu/nf/wuneng/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/test/java/edu/nf/wuneng/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/test-classes/edu/nf/wuneng/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/test-classes/edu/nf/wuneng/ServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/WunengApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/WunengApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/admin/web/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/admin/web/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/vo/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/vo/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/courseUpload.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/courseUpload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/application-dao.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/edu/nf/wuneng/admin/dao/AdminDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/edu/nf/wuneng/user/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/mapper/AdminMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/wuneng-dao-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/classes/edu/nf/wuneng/admin/entity/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/classes/edu/nf/wuneng/admin/entity/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/classes/edu/nf/wuneng/admin/entity/CourseAddr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/classes/edu/nf/wuneng/user/entity/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/wuneng-entity-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/exception/AccessException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/user/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/user/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/surefire-reports/2020-03-31T22-32-43_214-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/surefire-reports/TEST-edu.nf.wuneng.ServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/surefire-reports/edu.nf.wuneng.ServiceTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/test-classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/test-classes/edu/nf/wuneng/ServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/target/wuneng-service-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-util/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-util/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-util/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-util/target/wuneng-util-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/hotsource.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/hotsource.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/personal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/video.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/WunengApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/WunengApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/admin/web/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/admin/web/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/vo/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/vo/BaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/admin_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/admin_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/buypage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/WunengApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/admin/web/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/advice/ControllerAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/conf/UploadConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/conf/UploadVideo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/user/web/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/vo/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/vo/ResultVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/Cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/addClassPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/adminInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/adminLogin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/admin_index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/buy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/classInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/classType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/courseUpload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/carts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/css-Poppins300400500600700.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/flaticon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/master.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/meanmenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/owl.theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/preloader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/Flaticon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/Flaticon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/Flaticon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/Flaticon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiEyp8kv8JHgFVrJJbecmNE.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiEyp8kv8JHgFVrJJfecg.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/font/pxiEyp8kv8JHgFVrJJnecmNE.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/hotsource.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/apply-shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/banner-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/banner-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/blog-post-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/contact_banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/counter-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/counter4_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/courses3-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/courses_details_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/cursor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/dogDong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/event_details.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/grabbing.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/grabbing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/mayun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/news-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/nivo-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/nivo-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/register-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/testimonial_shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/video-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/video-shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/video_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/image/wangl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/1999.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/C#.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/C#1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/C#2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/android.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/androidhen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/androidrecycler.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/androidstudio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/androidyidong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/banner_bd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/biao_X_h.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/biao_duigouh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/bj_zhuce.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/btn_shangchuan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/center-menu-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/corner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/delete_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/describeImg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_11f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_biao_tx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_biaochi_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_tx_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_tx_05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_tx_07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_tx_09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_tx_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/diy_tx_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/duigou_bai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/edit-delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/emptyCar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/git.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/guanggao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/headImg-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/headImg-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/headImg-03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/headImg-1 - 副本.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/headImg-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/headImg-btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/headImg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/headImg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/html.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/htmlguanggao1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/htmlguanggao2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/htmlguanggao3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/java.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/java_img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/java_img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/javadesign.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/javajichu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/jiesuan_dg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/line_heng.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/line_shu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/list-icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/mark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/mark1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/mark2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/mybatis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/netgof.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/netjiagoushi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/netjichu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/netunity.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/online.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/part-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/python.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/python1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/python2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/q.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/qq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/rr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/searchSub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/shoppingImg-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/show.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/size.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/sj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/smallMirror.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/spring.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/springboot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/springmvc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/tubiao_more.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/vip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/wangjimm_hui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/wangjimm_lan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/weixin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/wrz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/xg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/xg_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/youhuiquan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/zc_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/zc_06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/zc_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/zc_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/zc_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/zc_16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/zc_19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/zc_22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/images/zc_25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/carts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/html5shiv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/jquery-1.12.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/jquery.magnific-popup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/jquery.meanmenu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/respond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/slick.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/js/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/font/iconfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/199912228013_avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/transfer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/layui/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/orderInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/personal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/courses1-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/courses1-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/courses1-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/courses1-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/courses1-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/courses1-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/home-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/home-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/home-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/home-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/menu_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/悟能logo-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/picture/悟能logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/html/chatlog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/html/find.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/html/getmsg.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/html/msgbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/layim.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/mobile/layim.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/skin/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/skin/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/skin/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/skin/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/skin/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/skin/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/css/modules/layim/voice/default.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/layim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/layui/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/polyfill.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/css/component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/fonts/codropsicons/codropsicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/fonts/codropsicons/codropsicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/fonts/codropsicons/codropsicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/fonts/codropsicons/codropsicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/fonts/codropsicons/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/img/demo-1-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/img/demo-2-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/js/EasePack.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/js/TweenLite.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/js/demo-1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/js/demo-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/js/demo-3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/js/demo-4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/js/html5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/plugins/sideshow/js/rAF.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/doc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/login.1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/message.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/nprogress.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/themes/blue.1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/themes/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/themes/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/themes/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/themes/light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/themes/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/themes/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/themes/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/treeselect.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/awesome/fa.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/awesome/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/awesome/ztree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/awesome/ztree.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/diy/1_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/diy/1_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/diy/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/diy/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/diy/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/diy/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/diy/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/diy/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/diy/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/diy/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/line_conn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/zTreeStandard.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/img/zTreeStandard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/default/ztree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/metro/img/line_conn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/metro/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/metro/img/metro.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/metro/img/metro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/css/ztree/metro/ztree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/images/GetVerfiyCode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/images/pay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/kitconfig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/message.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/nprogress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/onelevel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/pjax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/spa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/treeselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/src/js/ztree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/testUpload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/userInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/video/1.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/target/wuneng-web-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -60,6 +661,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="VideoPage" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -75,9 +681,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\repo" />
-        <option name="mavenHome" value="D:/apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="D:\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="localRepository" value="F:\repo" />
+        <option name="mavenHome" value="F:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="F:\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -85,6 +691,9 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1YkBcwqCsef6gplz5CQGfpCxGtc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -99,7 +708,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wuneng-web/target/classes/static/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -108,16 +717,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="project.structure.side.proportion" value="0.20408164" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\ideaprojects\wuneng\wuneng-web\src\main\resources\static\css" />
       <recent name="D:\ideaproject5\wuneng\wuneng-web\target\classes\static\js" />
       <recent name="D:\ideaproject5\wuneng\wuneng-web\src\main\resources\static\js" />
       <recent name="D:\ideaproject5\wuneng\wuneng-web\src\main\resources\static\video" />
       <recent name="D:\ideaproject5\wuneng\wuneng-web\src\main\resources\static" />
-      <recent name="D:\ideaproject5\wuneng\wuneng-web\src\main\resources\static\images" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -274,6 +883,10 @@
       <workItem from="1585717437406" duration="3659000" />
       <workItem from="1585730510729" duration="1081000" />
       <workItem from="1585736543370" duration="11026000" />
+      <workItem from="1585758019967" duration="6000" />
+      <workItem from="1585758162574" duration="17000" />
+      <workItem from="1585758517112" duration="22178000" />
+      <workItem from="1585878922875" duration="6277000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization project">
       <created>1583479332302</created>
@@ -332,26 +945,31 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="314" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1585718344842" />
-    <state x="442" y="113" key="FileChooserDialogImpl" timestamp="1585744879068">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="497" y="126" key="FileChooserDialogImpl" timestamp="1585917314759">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="442" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585744879068" />
-    <state width="1323" height="100" key="GridCell.Tab.0.bottom" timestamp="1585748231416">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="497" y="126" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585917314759" />
+    <state width="1493" height="381" key="GridCell.Tab.0.bottom" timestamp="1585919937463">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="100" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585748231416" />
-    <state width="1323" height="100" key="GridCell.Tab.0.center" timestamp="1585748231416">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1493" height="381" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585919937463" />
+    <state width="1493" height="381" key="GridCell.Tab.0.center" timestamp="1585919937462">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="100" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585748231416" />
-    <state width="1323" height="100" key="GridCell.Tab.0.left" timestamp="1585748231416">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1493" height="381" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585919937462" />
+    <state width="1493" height="381" key="GridCell.Tab.0.left" timestamp="1585919937461">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="100" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585748231416" />
-    <state width="1323" height="100" key="GridCell.Tab.0.right" timestamp="1585748231416">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1493" height="381" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585919937461" />
+    <state width="1493" height="381" key="GridCell.Tab.0.right" timestamp="1585919937463">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="100" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585748231416" />
+    <state width="1493" height="381" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585919937463" />
     <state width="1323" height="165" key="GridCell.Tab.1.bottom" timestamp="1583926229130">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -372,26 +990,33 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="263" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1583928630967" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1585800723821">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1585800723821" />
     <state x="323" y="66" key="NewModule_or_Project.wizard" timestamp="1584511891744">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="323" y="66" key="NewModule_or_Project.wizard/0.0.1366.738@0.0.1366.738" timestamp="1584511891744" />
-    <state x="149" y="0" key="SettingsEditor" timestamp="1585665301975">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="168" y="0" key="SettingsEditor" timestamp="1585920840819">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="149" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585665301975" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1585718367944">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="168" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585920840819" />
+    <state x="359" y="161" key="Vcs.Push.Dialog.v2" timestamp="1585920767202">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1585718367944" />
+    <state x="359" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585920767202" />
     <state x="363" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1583889742013">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="363" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1583889742013" />
-    <state x="390" y="160" key="git4idea.merge.GitPullDialog" timestamp="1585718355319">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="439" y="179" key="git4idea.merge.GitPullDialog" timestamp="1585837720056">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="390" y="160" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1585718355319" />
+    <state x="439" y="179" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1585837720056" />
     <state x="54" y="69" key="new project wizard" timestamp="1584606399138">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

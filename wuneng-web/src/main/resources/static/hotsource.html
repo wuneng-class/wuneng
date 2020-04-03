@@ -8,11 +8,14 @@
     <meta name="author" content="Ecology Theme">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>热门课程</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"> -->
     <!-- 谷歌字体 -->
     <link href="css/css-Poppins300400500600700.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+<!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/flaticon.css">
@@ -29,9 +32,19 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style type="text/css">
         .font-s{
         	font-size: 40px;
+        }
+        .d-flex{
+            display:-ms-flexbox!important;
+            display:flex!important
+        }
+        .justify-content-between{
+            justify-content: space-between!important;
         }
     </style>
 
@@ -54,6 +67,7 @@
                 </div>
                 <div class="col-sm-6 col-xs-12 header-top-left">
                     <ul class="d-flex ">
+                        <li class="nav-item"><a href="#" class="nav-link sign-in js-modal-show"><i class="fa fa-shopping-cart"></i>购物车</a></li>
                         <li class="nav-item"><a href="#" class="nav-link sign-in js-modal-show"><i class="flaticon-login-button"></i>登录</a></li>
                         <li class="nav-item"><a href="#" class="nav-link join_now js-modal-show"><i class="flaticon-profile"></i>未登录</a></li>
                     </ul>
@@ -224,7 +238,7 @@
                         <li>电话: +86-131-28553-713</li>
                     </ul>
                     <div class="social_wraper">
-                        <ul class="social-items d-flex list-unstyled">
+                        <ul class="social-items list-unstyled d-flex">
                             <li><a href="#"><i class="fab fa-facebook-f fb-icon"></i></a></li>
                             <li><a href="#"><i class="fab fa-github github-icon"></i></a></li>
                             <li><a href="#"><i class="fab fa-tencent-weibo tencent-icon"></i></a></li>
@@ -275,13 +289,13 @@
     <div class="copytight_info">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-between">
+                <div class="col-12 col-md-12 col-lg-12 justify-content-between d-flex">
                     <p>版权所属 &copy; 悟能课堂</p>
-                    <ul class="nav navbar list-unstyled">
-                        <li><a href="javascript:;">条款</a></li>
-                        <li><a href="#">个人意见</a></li>
-                        <li><a href="#">常见问题</a></li>
-                    </ul>
+<!--                    <ul class="nav navbar list-unstyled">-->
+<!--                        <li><a href="javascript:;">条款</a></li>-->
+<!--                        <li><a href="#">个人意见</a></li>-->
+<!--                        <li><a href="#">常见问题</a></li>-->
+<!--                    </ul>-->
                 </div>
             </div>
         </div>
@@ -300,16 +314,17 @@
 <!-- JavaScript -->
 
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/jquery.meanmenu.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="static/js/jquery.magnific-popup.min.js"></script>
+<script src="static/js/owl.carousel.min.js"></script>
+<script src="static/js/slick.min.js"></script>
+<script src="static/js/jquery.meanmenu.min.js"></script>
+<script src="static/js/wow.min.js"></script>
+<script src="static/js/custom.js"></script>
+<script src="static/js/popper.min.js"></script>
 
 <!--&lt;!&ndash; HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries &ndash;&gt;-->
 <!--&lt;!&ndash; WARNING: Respond.js doesn't work if you view the page via file:// &ndash;&gt;-->
