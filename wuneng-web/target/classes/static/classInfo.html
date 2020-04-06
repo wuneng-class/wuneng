@@ -101,7 +101,6 @@
             method:'get',
             success:function(result){
                 if(result.code==200){
-                    alert('1');
                     $.each(result.data,function(index,obj){
                         $('#courseTable').append(
                         '<tr>'

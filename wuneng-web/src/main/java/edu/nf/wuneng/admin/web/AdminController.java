@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,19 +58,13 @@ public class AdminController extends BaseController {
      */
     @RequestMapping("/upload_course")
     public ResultVO uploadCourse(Integer cid,String cname,String cintroduct,MultipartFile cimg1,MultipartFile cimg2,MultipartFile cimg3,MultipartFile[] file){
-        System.out.println(cid);
-        System.out.println(cname);
-        System.out.println(cintroduct);
         Course course=new Course();
         course.setCid(cid);
         course.setCname(cname);
         course.setCintroduct(cintroduct);
         String img1=uploadVideo.uploadFile(cimg1);
-        System.out.println(img1);
         String img2=uploadVideo.uploadFile(cimg2);
-        System.out.println(img2);
         String img3=uploadVideo.uploadFile(cimg3);
-        System.out.println(img3);
         course.setCimg1(img1);
         course.setCimg2(img2);
         course.setCimg3(img3);
@@ -76,7 +73,6 @@ public class AdminController extends BaseController {
             CourseAddr ca=new CourseAddr();
             ca.setCaId(cid);
             String addr=uploadVideo.uploadFile(multipartFile);
-            System.out.println("addr:"+addr);
             ca.setCaAddr(addr);
             list.add(ca);
         }
@@ -96,4 +92,39 @@ public class AdminController extends BaseController {
         List<CourseInfo> courseInfos = adminService.listCourseInfo();
         return success(courseInfos);
     }
+
+    @RequestMapping("/get_hotCourseById")
+    public void getHotCourseById(Integer id, HttpSession session, HttpServletResponse response) throws IOException {
+        session.setAttribute("id",id);
+        response.sendRedirect("video.html");
+    }
+
+    @RequestMapping("/showHotCourse")
+    public ResultVO<HotCourse> showHotCourse(HttpSession session){
+        Integer id= (Integer) session.getAttribute("id");
+        HotCourse hotCourse = adminService.showHotCourse(id);
+        return success(hotCourse);
+    }
+
+    @RequestMapping("/list_payCourse")
+    public ResultVO<List<PayCourse>> listPayCourse(){
+        List<PayCourse> payCourses = adminService.listPayCourse();
+        return success(payCourses);
+    }
+
+    @RequestMapping("/returnToBuy")
+    public void returnToBuy(Integer id,HttpSession session,HttpServletResponse response) throws IOException {
+        session.setAttribute("buyId",id);
+        response.sendRedirect("buy.html");
+    }
+
+    @RequestMapping("/get_payCourseById")
+    public ResultVO<PayCourse> getPayCourseById(HttpSession session){
+        Integer id=(Integer) session.getAttribute("buyId");
+        PayCourse payCourseById = adminService.getPayCourseById(id);
+        return success(payCourseById);
+    }
+
+
+
 }

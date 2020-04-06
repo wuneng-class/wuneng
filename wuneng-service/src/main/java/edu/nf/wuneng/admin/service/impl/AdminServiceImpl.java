@@ -62,4 +62,31 @@ public class AdminServiceImpl implements AdminService {
             throw new AccessException("服务器错误");
         }
     }
+
+    @Override
+    public HotCourse showHotCourse(Integer id) {
+        try {
+            return adminDao.showHotCourse(id);
+        } catch (Exception e) {
+            throw new AccessException("服务器错误");
+        }
+    }
+
+    @Override
+    public List<PayCourse> listPayCourse() {
+        try {
+            return adminDao.listPayCourse();
+        } catch (Exception e) {
+            throw new AccessException("服务器错误");
+        }
+    }
+
+    @Override
+    public PayCourse getPayCourseById(Integer id) {
+        try {
+            return adminDao.getPayCourseById(id);
+        } catch (Exception e) {
+            throw new AccessException("查询错误");
+        }
+    }
 }

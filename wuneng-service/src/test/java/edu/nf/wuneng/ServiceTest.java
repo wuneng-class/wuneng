@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 
 /**
  * @author YXD
@@ -19,9 +21,8 @@ public class ServiceTest {
     private AdminService adminService;
 
     @Test
-    void testLoginAdmin(){
-        Admin admin = adminService.loginAdmin("admin");
-        System.out.println(admin.getName());
+    void testAdminService(){
+
     }
 
 

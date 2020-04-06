@@ -45,6 +45,25 @@
         <result property="num" column="ci_num"></result>
     </resultMap>
 
+    <resultMap id="hotCourseMapper" type="edu.nf.wuneng.admin.entity.HotCourse">
+        <id property="id" column="i_id"></id>
+        <result property="name" column="i_name"></result>
+        <result property="context" column="i_context"></result>
+        <result property="text" column="i_text"></result>
+        <result property="img" column="i_img"></result>
+        <result property="addr" column="i_addr"></result>
+    </resultMap>
+
+    <resultMap id="payCourseMapper" type="edu.nf.wuneng.admin.entity.PayCourse">
+        <id property="id" column="p_id"></id>
+        <result property="name" column="p_name"></result>
+        <result property="context" column="p_context"></result>
+        <result property="price" column="p_price"></result>
+        <result property="cover" column="p_cover"></result>
+        <result property="img1" column="p_img1"></result>
+        <result property="img2" column="p_img2"></result>
+    </resultMap>
+
     <select id="loginAdmin" resultMap="adminMapper">
         select a_id,a_name,a_password from admin where a_id=#{id}
     </select>
@@ -66,5 +85,17 @@
 
     <select id="listCourseInfo" resultMap="courseInfoMapper">
         select ci_id,ci_name,ci_context,ci_img,ci_addr,ci_num from course_info
+    </select>
+
+    <select id="showHotCourse" resultMap="hotCourseMapper" parameterType="integer">
+        select i_id,i_context,i_name,i_text,i_img,i_addr from it_hot_course where i_id=#{id}
+    </select>
+
+    <select id="listPayCourse" resultMap="payCourseMapper">
+        select p_id,p_name,p_context,p_price,p_cover,p_img1,p_img2 from pay_course
+    </select>
+
+    <select id="getPayCourseById" resultMap="payCourseMapper" parameterType="integer">
+        select p_id,p_name,p_context,p_price,p_cover,p_img1,p_img2 from pay_course where p_id=#{id}
     </select>
 </mapper>

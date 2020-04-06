@@ -110,12 +110,12 @@
   <div class="col-md-1"></div>
   <div class="col-md-1"></div>
   <div class="col-md-3 box-bgcolor">
-    <img src="images/html.jpg">
+    <img id="cover" src="">
   </div>
   <div class="col-md-5 box-bgcolor">
-    <h4>0基础学前端——HTML/HTML5基础</h4>
-    <p>HTML是超文本标记语言，它是网页构成的基础，我们见过的网页基本都离不开HTML代码。本课程从HTML代码的结构写法入手，了解常见的HMTL标签和属性，了解各类HTML标签的用法。</p>
-    <p class="fontsize">￥<span>999.9</span></p>
+    <h4 id="h4name"></h4>
+    <p id="pcontext"></p>
+    <p class="fontsize">￥<span id="spanprice"></span></p>
     <button type="button" class="btn btn-danger">买它买它</button>
     <button type="button" class="btn btn-warning">加入购物</button>
    </div>
@@ -137,9 +137,9 @@
       </div>
       <div id="con02" style="width:100%;height:70px;">
        <div id="diva2" class="on" style="padding:5px 0px 0px 1px;">
-      <img src="images/htmlguanggao1.jpg" width="100%">
-      <img src="images/htmlguanggao2.jpg" width="100%">
-      <img src="images/htmlguanggao3.jpg" width="100%">
+      <img id="img1" src="" width="100%">
+      <img id="img2" src="" width="100%">
+<!--      <img src="images/htmlguanggao3.jpg" width="100%">-->
      </div>
        <div id="diva3" class="off">
          <table class="table table-striped">
@@ -210,11 +210,28 @@
   <div class="col-md-1"></div>
 </div>
 </div>
-
-
-
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $.ajax({
+                url:'get_payCourseById',
+                method:'get',
+                success:function(result){
+                    if(result.code==200){
+                        $('#cover').attr('src',result.data.cover);
+                        $('#h4name').html(result.data.name);
+                        $('#pcontext').html(result.data.context);
+                        $('#spanprice').html(result.data.price);
+                        $('#img1').attr('src',result.data.img1);
+                        $('#img2').attr('src',result.data.img2);
+                    }else{
+                        alert(result.message);
+                    }
+                }
+            })
+        })
+    </script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript">

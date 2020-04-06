@@ -20,4 +20,10 @@ public interface AdminDao {
     List<CourseCation> listCourseCation();
 
     List<CourseInfo> listCourseInfo();
+
+    HotCourse showHotCourse(Integer id);
+
+    List<PayCourse> listPayCourse();
+
+    PayCourse getPayCourseById(Integer id);
 }
