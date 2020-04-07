@@ -3,6 +3,7 @@ package edu.nf.wuneng.user.web;
 import com.github.pagehelper.PageInfo;
 import edu.nf.wuneng.CodeUtil;
 import edu.nf.wuneng.SmsUtil;
+import edu.nf.wuneng.admin.entity.PayCourse;
 import edu.nf.wuneng.user.entity.Code;
 import edu.nf.wuneng.user.entity.Users;
 import edu.nf.wuneng.user.service.UserService;
@@ -69,6 +70,19 @@ public class UserController extends BaseController {
             return success("发送成功");
         }
         return fail(500);
+    }
+
+    @RequestMapping("/userGet_payCourseById")
+    public ResultVO userGetPayCourseById(Integer id,HttpSession session){
+        session.setAttribute("payid",id);
+        return success(200);
+    }
+
+    @RequestMapping("/loadPay")
+    public ResultVO<PayCourse> loadPay(HttpSession session){
+        Integer id=(Integer) session.getAttribute("payid");
+        PayCourse payCourseById = userService.getPayCourseById(id);
+        return success(payCourseById);
     }
 
 }

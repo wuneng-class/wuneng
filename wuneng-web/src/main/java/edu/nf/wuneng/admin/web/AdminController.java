@@ -125,6 +125,17 @@ public class AdminController extends BaseController {
         return success(payCourseById);
     }
 
+    @RequestMapping("/getCourseByNum")
+    public ResultVO<CourseInfo> getCourseByNum(Integer num){
+        CourseInfo courseByNum = adminService.getCourseByNum(num);
+        return success(courseByNum);
+    }
+
+    @RequestMapping("/update_courseInfo")
+    public ResultVO updateCourseInfo(CourseInfo courseInfo){
+        adminService.updateCourseInfo(courseInfo);
+        return success(200);
+    }
 
 
 }

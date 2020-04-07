@@ -26,4 +26,8 @@ public interface AdminDao {
     List<PayCourse> listPayCourse();
 
     PayCourse getPayCourseById(Integer id);
+
+    CourseInfo getCourseByNum(Integer num);
+
+    void updateCourseInfo(CourseInfo courseInfo);
 }

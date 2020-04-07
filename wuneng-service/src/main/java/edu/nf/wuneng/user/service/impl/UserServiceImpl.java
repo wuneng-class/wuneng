@@ -1,6 +1,7 @@
 package edu.nf.wuneng.user.service.impl;
 
 import com.github.pagehelper.PageInfo;
+import edu.nf.wuneng.admin.entity.PayCourse;
 import edu.nf.wuneng.exception.AccessException;
 import edu.nf.wuneng.user.dao.UserDao;
 import edu.nf.wuneng.user.entity.Code;
@@ -61,6 +62,15 @@ public class UserServiceImpl implements UserService {
             }
         } catch (Exception e) {
             throw new AccessException(e.getMessage());
+        }
+    }
+
+    @Override
+    public PayCourse getPayCourseById(Integer id) {
+        try {
+            return userDao.getPayCourseById(id);
+        } catch (Exception e) {
+            throw new AccessException("服务器错误");
         }
     }
 }

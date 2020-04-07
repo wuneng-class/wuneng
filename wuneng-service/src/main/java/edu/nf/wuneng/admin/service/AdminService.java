@@ -25,4 +25,8 @@ public interface AdminService {
 
     PayCourse getPayCourseById(Integer id);
 
+    CourseInfo getCourseByNum(Integer num);
+
+    void updateCourseInfo(CourseInfo courseInfo);
+
 }

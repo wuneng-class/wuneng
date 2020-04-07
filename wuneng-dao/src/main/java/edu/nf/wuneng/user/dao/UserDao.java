@@ -1,5 +1,6 @@
 package edu.nf.wuneng.user.dao;
 
+import edu.nf.wuneng.admin.entity.PayCourse;
 import edu.nf.wuneng.user.entity.Users;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -17,5 +18,7 @@ public interface UserDao {
     Users login(String email);
 
     void register(Users users);
+
+    PayCourse getPayCourseById(Integer id);
 
 }

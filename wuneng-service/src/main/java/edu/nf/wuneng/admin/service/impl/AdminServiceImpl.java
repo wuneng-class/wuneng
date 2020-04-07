@@ -89,4 +89,22 @@ public class AdminServiceImpl implements AdminService {
             throw new AccessException("查询错误");
         }
     }
+
+    @Override
+    public CourseInfo getCourseByNum(Integer num) {
+        try {
+            return adminDao.getCourseByNum(num);
+        } catch (Exception e) {
+            throw new AccessException("服务器错误");
+        }
+    }
+
+    @Override
+    public void updateCourseInfo(CourseInfo courseInfo) {
+        try {
+            adminDao.updateCourseInfo(courseInfo);
+        } catch (Exception e) {
+            throw new AccessException("修改失败");
+        }
+    }
 }

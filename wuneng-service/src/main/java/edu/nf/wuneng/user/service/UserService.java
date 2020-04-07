@@ -1,6 +1,7 @@
 package edu.nf.wuneng.user.service;
 
 import com.github.pagehelper.PageInfo;
+import edu.nf.wuneng.admin.entity.PayCourse;
 import edu.nf.wuneng.user.entity.Code;
 import edu.nf.wuneng.user.entity.Users;
 
@@ -14,5 +15,7 @@ public interface UserService {
 
     Users login(Users users);
     void register(Users users, Code code);
+
+    PayCourse getPayCourseById(Integer id);
 
 }
