@@ -26,12 +26,9 @@ public class ServiceTest {
 
     @Test
     void testAdminService(){
-        CourseInfo courseInfo=new CourseInfo();
-        courseInfo.setId(1);
-        courseInfo.setName("java基础11");
-        courseInfo.setContext("11Java语言的语法与C语言和C++语言很接近，使得大多数程序员很容易学习和使用.");
-        courseInfo.setNum(1);
-        adminService.updateCourseInfo(courseInfo);
+        PayCourse payCourseById = userService.getPayCourseById(1011);
+        System.out.println(payCourseById.getName());
+        System.out.println(payCourseById.getPrice());
     }
 
 

@@ -14,12 +14,21 @@
 
     <resultMap id="payCourseMapper" type="edu.nf.wuneng.admin.entity.PayCourse">
         <id property="id" column="p_id"></id>
-        <result property="name" column="c_name"></result>
+        <result property="name" column="p_name"></result>
         <result property="context" column="p_context"></result>
         <result property="price" column="p_price"></result>
         <result property="cover" column="p_cover"></result>
         <result property="img1" column="p_img1"></result>
         <result property="img2" column="p_img2"></result>
+    </resultMap>
+
+    <resultMap id="ordersMapper" type="edu.nf.wuneng.user.entity.Orders">
+        <id property="id" column="o_id"></id>
+        <result property="uid" column="o_u_id"></result>
+        <result property="time" column="o_time"></result>
+        <result property="status" column="o_status"></result>
+        <result property="total" column="o_tocal"></result>
+        <result property="couponId" column="o_coupon_id"></result>
     </resultMap>
 
     <select id="listUsers" resultMap="userMapper">
@@ -37,5 +46,13 @@
     <select id="getPayCourseById" resultMap="payCourseMapper" parameterType="integer">
         select p_id,p_name,p_context,p_price,p_cover,p_img1,p_img2 from pay_course where p_id=#{id}
     </select>
+
+    <insert id="addOrders" parameterType="edu.nf.wuneng.user.entity.Orders">
+        insert into orders(o_id,o_u_id,o_tocal) values(#{id},#{uid},#{total})
+    </insert>
+
+    <update id="updateOrders" parameterType="string">
+        update orders set o_status='已付款' where o_id=#{id}
+    </update>
 
 </mapper>

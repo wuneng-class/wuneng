@@ -5,6 +5,7 @@ import edu.nf.wuneng.admin.entity.PayCourse;
 import edu.nf.wuneng.exception.AccessException;
 import edu.nf.wuneng.user.dao.UserDao;
 import edu.nf.wuneng.user.entity.Code;
+import edu.nf.wuneng.user.entity.Orders;
 import edu.nf.wuneng.user.entity.Users;
 import edu.nf.wuneng.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,6 +70,24 @@ public class UserServiceImpl implements UserService {
     public PayCourse getPayCourseById(Integer id) {
         try {
             return userDao.getPayCourseById(id);
+        } catch (Exception e) {
+            throw new AccessException("服务器错误");
+        }
+    }
+
+    @Override
+    public void addOrders(Orders orders) {
+        try {
+            userDao.addOrders(orders);
+        } catch (Exception e) {
+            throw new AccessException("服务器错误");
+        }
+    }
+
+    @Override
+    public void updateOrders(String id) {
+        try {
+            userDao.updateOrders(id);
         } catch (Exception e) {
             throw new AccessException("服务器错误");
         }

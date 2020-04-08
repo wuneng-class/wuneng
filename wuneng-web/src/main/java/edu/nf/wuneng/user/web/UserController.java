@@ -5,6 +5,7 @@ import edu.nf.wuneng.CodeUtil;
 import edu.nf.wuneng.SmsUtil;
 import edu.nf.wuneng.admin.entity.PayCourse;
 import edu.nf.wuneng.user.entity.Code;
+import edu.nf.wuneng.user.entity.Orders;
 import edu.nf.wuneng.user.entity.Users;
 import edu.nf.wuneng.user.service.UserService;
 import edu.nf.wuneng.vo.BaseController;
@@ -82,7 +83,13 @@ public class UserController extends BaseController {
     public ResultVO<PayCourse> loadPay(HttpSession session){
         Integer id=(Integer) session.getAttribute("payid");
         PayCourse payCourseById = userService.getPayCourseById(id);
+
         return success(payCourseById);
     }
 
+    @RequestMapping("/successOrders")
+    public ResultVO<Orders> successOrders(HttpSession session){
+        Orders orders=(Orders) session.getAttribute("successOrders");
+        return success(orders);
+    }
 }

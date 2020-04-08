@@ -3,6 +3,7 @@ package edu.nf.wuneng.user.web;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.internal.util.AlipaySignature;
 import edu.nf.wuneng.conf.AlipayConfig;
+import edu.nf.wuneng.user.entity.Orders;
 import edu.nf.wuneng.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -58,14 +59,11 @@ public class PaySuccessController {
             //付款金额
             String total_amount = new String(request.getParameter("total_amount").getBytes("ISO-8859-1"),"UTF-8");
 
-            /*OrderInfo orderInfo=(OrderInfo)session.getAttribute("orderInfo");
-            List<Orders> list=(List<Orders>)session.getAttribute("list");
-            Users user=(Users)session.getAttribute("user");
-            System.out.println("success:"+user.getUserName());
-            userService.addOrderInfo(orderInfo);
-            userService.addOrders(list);
-            userService.clearShop(user.getAccount());*/
-            response.sendRedirect("returnUrl.html");
+            Orders orders=(Orders) session.getAttribute("payingOrders");
+
+            userService.updateOrders(orders.getId());
+            session.setAttribute("successOrders",orders);
+            response.sendRedirect("tjorder.html");
         }
     }
 
