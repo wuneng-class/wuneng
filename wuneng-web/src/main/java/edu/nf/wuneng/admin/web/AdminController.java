@@ -14,6 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,17 +46,7 @@ public class AdminController extends BaseController {
         return "success";
     }
 
-    /**
-     * 课程上传
-     * @param cid
-     * @param cname
-     * @param cintroduct
-     * @param cimg1
-     * @param cimg2
-     * @param cimg3
-     * @param file
-     * @return
-     */
+
     @RequestMapping("/upload_course")
     public ResultVO uploadCourse(Integer cid,String cname,String cintroduct,MultipartFile cimg1,MultipartFile cimg2,MultipartFile cimg3,MultipartFile[] file){
         Course course=new Course();
@@ -80,10 +71,40 @@ public class AdminController extends BaseController {
         adminService.addCourseAddr(list);
         return success(200);
     }
+    @RequestMapping("/addPayCourse")
+    public ResultVO addPayCourse(Integer id, String name, String context, BigDecimal price,MultipartFile cover,MultipartFile img1,MultipartFile img2,MultipartFile[] addr){
+        PayCourse payCourse=new PayCourse();
+        payCourse.setId(id);
+        payCourse.setName(name);
+        payCourse.setContext(context);
+        payCourse.setPrice(price);
+        String coveraddr=uploadVideo.uploadFile(cover);
+        System.out.println(coveraddr);
+        String img1addr=uploadVideo.uploadFile(img1);
+        System.out.println(img1addr);
+        String img2addr=uploadVideo.uploadFile(img2);
+        System.out.println(img2addr);
+        payCourse.setCover(coveraddr);
+        payCourse.setImg1(img1addr);
+        payCourse.setImg2(img2addr);
+        List<PayCourseAddr> list=new ArrayList<>();
+        for (MultipartFile file : addr) {
+            PayCourseAddr pca=new PayCourseAddr();
+            pca.setId(id);
+            pca.setText(file.getOriginalFilename());
+            String videoaddr=uploadVideo.uploadFile(file);
+            pca.setAddr(videoaddr);
+            list.add(pca);
+        }
+        adminService.addPayCourse(payCourse);
+        adminService.addPayCourseAddr(list);
+        return success(200);
+    }
 
     @RequestMapping("/list_courseCation")
     public ResultVO<List<CourseCation>> listCourseCation(){
         List<CourseCation> courseCations = adminService.listCourseCation();
+
         return success(courseCations);
     }
 
@@ -136,6 +157,8 @@ public class AdminController extends BaseController {
         adminService.updateCourseInfo(courseInfo);
         return success(200);
     }
+
+
 
 
 }

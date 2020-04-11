@@ -3,6 +3,7 @@ package edu.nf.wuneng.admin.entity;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * @author YXD
@@ -17,4 +18,5 @@ public class PayCourse {
     private String cover;
     private String img1;
     private String img2;
+    private List<Discuss> listDiscuss;
 }

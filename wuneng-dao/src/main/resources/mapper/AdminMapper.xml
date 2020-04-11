@@ -64,6 +64,12 @@
         <result property="img2" column="p_img2"></result>
     </resultMap>
 
+    <resultMap id="payCourseAddrMapper" type="edu.nf.wuneng.admin.entity.PayCourseAddr">
+        <id property="id" column="pca_id"></id>
+        <result property="text" column="pca_text"></result>
+        <result property="addr" column="pca_addr"></result>
+    </resultMap>
+
     <select id="loginAdmin" resultMap="adminMapper">
         select a_id,a_name,a_password from admin where a_id=#{id}
     </select>
@@ -106,4 +112,15 @@
     <update id="updateCourseInfo" parameterType="edu.nf.wuneng.admin.entity.CourseInfo">
         update course_info set ci_name=#{name},ci_context=#{context} where ci_num=#{num}
     </update>
+
+    <insert id="addPayCourse" parameterType="edu.nf.wuneng.admin.entity.PayCourse">
+        insert into pay_course(p_id,p_name,p_context,p_price,p_cover,p_img1,p_img2) values(#{id},#{name},#{context},#{price},#{cover},#{img1},#{img2})
+    </insert>
+
+    <insert id="addPayCourseAddr" parameterType="edu.nf.wuneng.admin.entity.PayCourseAddr">
+        insert into pay_course_addr(pca_id,pca_text,pca_addr) values
+        <foreach collection="list" item="payCourseAddr" separator=",">
+            (#{payCourseAddr.id},#{payCourseAddr.text},#{payCourseAddr.addr})
+        </foreach>
+    </insert>
 </mapper>

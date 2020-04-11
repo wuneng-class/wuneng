@@ -1,6 +1,9 @@
 package edu.nf.wuneng.user.entity;
 
+import edu.nf.wuneng.admin.entity.PayCourse;
 import lombok.Data;
+
+import java.util.List;
 
 /**
  * @author YXD
@@ -15,4 +18,5 @@ public class Users {
     private String userHead;
     private String sex;
     private String email;
+    private List<PayCourse> listPayCourse;
 }

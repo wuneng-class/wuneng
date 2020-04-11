@@ -53,9 +53,10 @@
                     
                 </div>
                 <div class="col-sm-6 col-xs-12 header-top-left">
-                    <ul class="d-flex ">
-                        <li class="nav-item"><a href="#" class="nav-link sign-in js-modal-show"><i class="flaticon-login-button"></i>登录</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link join_now js-modal-show"><i class="flaticon-profile"></i>未登录</a></li>
+                    <ul class="d-flex " id="ul_user_name" >
+                        <li class="nav-item"><a href="Cart.html"><label>购物车</label></a></li>
+                        <li class="nav-item" id="li_user_name" style="display: none"><a href="personal.html"><label id="user_name">123</label></a></li>
+                        <li class="nav-item" id="li_login"><span>欢迎来悟能，</span><a href="login.html"><i class="flaticon-login-button"></i>请登录</a></li>
                     </ul>
                 </div>
             </div>
@@ -301,6 +302,31 @@
 
 
 <script src="js/jquery-3.2.1.min.js"></script>
+<script>
+    function loadUser(){
+        $(function () {
+            $.ajax({
+                url:'auth/get_user',
+                method:'get',
+                success:function (result) {
+                    if (result.code==200){
+                        $("#li_user_name").css('display','block')
+                        $("#li_login").css('display','none')
+                        $("#user_name").text(result.data.userName)
+                    }else {
+                        $("#li_user_name").css('display','none')
+                        $("#li_login").css('display','block')
+                    }
+                }
+            })
+        })
+    }
+
+
+
+    loadUser();
+
+</script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 

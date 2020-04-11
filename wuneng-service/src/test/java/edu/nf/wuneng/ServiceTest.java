@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -26,9 +28,13 @@ public class ServiceTest {
 
     @Test
     void testAdminService(){
-        PayCourse payCourseById = userService.getPayCourseById(1011);
-        System.out.println(payCourseById.getName());
-        System.out.println(payCourseById.getPrice());
+        List<CourseCation> courseCations = adminService.listCourseCation();
+        for (CourseCation courseCation : courseCations) {
+            for (CourseInfo courseInfo : courseCation.getCourseInfo()) {
+                System.out.println(courseCation.getName());
+                System.out.println(courseInfo.getContext());
+            }
+        }
     }
 
 

@@ -29,4 +29,8 @@ public interface AdminService {
 
     void updateCourseInfo(CourseInfo courseInfo);
 
+    void addPayCourse(PayCourse payCourse);
+
+    void addPayCourseAddr(List<PayCourseAddr> payCourseAddr);
+
 }

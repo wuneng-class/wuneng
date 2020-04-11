@@ -73,7 +73,7 @@
     </dependencyManagement>
 
     <build>
-        <finalName>wuneng-web-1.0-SNAPSHOT.jar</finalName>
+        <finalName>wuneng.jar</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

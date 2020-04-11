@@ -30,4 +30,8 @@ public interface AdminDao {
     CourseInfo getCourseByNum(Integer num);
 
     void updateCourseInfo(CourseInfo courseInfo);
+
+    void addPayCourse(PayCourse payCourse);
+
+    void addPayCourseAddr(List<PayCourseAddr> payCourseAddr);
 }

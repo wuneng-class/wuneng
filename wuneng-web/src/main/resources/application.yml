@@ -19,8 +19,8 @@ spring:
   servlet:
     multipart:
       enabled: true
-      max-file-size: 100MB
-      max-request-size: 100MB
+      max-file-size: 200MB
+      max-request-size: 200MB
   mail:
     username: 1574784536@qq.com
     password: imvagvjyanmzbagi
@@ -33,8 +33,8 @@ spring:
   profiles:
     include: dao
 fdfs:
-  so-timeout: 2500
-  connect-timeout: 600
+  so-timeout: 3000
+  connect-timeout: 1000
   thumb-image:
     width: 100
     height: 100

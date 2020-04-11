@@ -107,4 +107,22 @@ public class AdminServiceImpl implements AdminService {
             throw new AccessException("修改失败");
         }
     }
+
+    @Override
+    public void addPayCourse(PayCourse payCourse) {
+        try {
+            adminDao.addPayCourse(payCourse);
+        } catch (Exception e) {
+            throw new AccessException("添加失败");
+        }
+    }
+
+    @Override
+    public void addPayCourseAddr(List<PayCourseAddr> payCourseAddr) {
+        try {
+            adminDao.addPayCourseAddr(payCourseAddr);
+        } catch (Exception e) {
+            throw new AccessException("添加失败");
+        }
+    }
 }
