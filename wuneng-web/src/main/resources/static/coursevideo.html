@@ -108,8 +108,8 @@
                         <img src="images/1999.jpg" width="50" height="50">
                     </div>
                     <div class="col-sm-10">
-                        <textarea rows="4" cols="70">请自觉遵守互联网相关政策法规</textarea>
-                        <input type="button" name="" value="发表评论" class="btn btn-danger">
+                        <textarea rows="4" cols="70" id="textareaDiscuss" placeholder="请自觉遵守互联网相关政策法规"></textarea>
+                        <input type="button" id="btnDiscuss" name="" value="发表评论" class="btn btn-danger">
                         <hr>
                     </div>
 
@@ -174,7 +174,7 @@
                         $.each(result.data,function(i,obj){
                             $.each(obj.listUsers,function(j,obj2){
                                 $('#loadSpan').append(
-                                    '<div class="row">'
+                                    '<div class="row dis">'
                                     +'<div class="col-sm-2">'
                                     +'<img src="'+obj2.userHead+'" width="50" height="50">'
                                     +'</div>'
@@ -194,6 +194,27 @@
             })
         })
     }
+
+    $('#btnDiscuss').on('click',function(){
+        var discuss=$('#textareaDiscuss').val();
+        if(discuss!=null && discuss!=''){
+            $.ajax({
+                url:'addDiscuss?text='+discuss,
+                method:'post',
+                success:function(result){
+                    if(result.code==200){
+                        $('.dis').remove();
+                        loadDiscuss();
+                        $('#textareaDiscuss').val('');
+                    }else{
+                        alert(result.message);
+                    }
+                }
+            })
+        }else{
+            alert('请输入内容');
+        }
+    })
 
     loadVideo();
     loadDiscuss();

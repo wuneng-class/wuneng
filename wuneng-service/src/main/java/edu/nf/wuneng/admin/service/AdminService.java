@@ -49,4 +49,6 @@ public interface AdminService {
     PageInfo<Discuss> listDiscuss(Integer pageNum,Integer pageSize);
     List<Discuss> listDiscussByNum(Integer num);
 
+    void addDiscuss(Integer pid,Integer uid,String text);
+
 }

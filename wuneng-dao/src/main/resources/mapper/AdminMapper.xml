@@ -189,5 +189,9 @@
         select u.u_head,u.u_name,d.d_text,d.d_time from user u,discuss d,course_info ci where u.u_id=d.u_id and d.p_id=ci.ci_num and ci.ci_num=#{num} order by d_time desc
     </select>
 
+    <insert id="addDiscuss">
+        insert into discuss(p_id,u_id,d_text) values(#{pid},#{uid},#{text})
+    </insert>
+
 
 </mapper>

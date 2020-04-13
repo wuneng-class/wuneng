@@ -10,7 +10,6 @@ import java.util.List;
  * @author YXD
  * @date 2020/4/13
  */
-public interface ESCourseDao extends ElasticsearchRepository<ESCourse, String> {
-    @Query("{\"match\" : {\"type\" : \"?0\"}}}")
-    List<ESCourse> listCourseByName(String name);
+public interface ESCourseDao {
+
 }

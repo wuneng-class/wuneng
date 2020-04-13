@@ -229,4 +229,13 @@ public class AdminServiceImpl implements AdminService {
             throw new AccessException("查询错误");
         }
     }
+
+    @Override
+    public void addDiscuss(Integer pid, Integer uid, String text) {
+        try {
+            adminDao.addDiscuss(pid,uid,text);
+        } catch (Exception e) {
+            throw new AccessException("添加失败");
+        }
+    }
 }

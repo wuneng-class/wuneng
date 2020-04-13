@@ -5,6 +5,7 @@ import edu.nf.wuneng.admin.entity.*;
 import edu.nf.wuneng.admin.service.AdminService;
 import edu.nf.wuneng.conf.UploadVideo;
 import edu.nf.wuneng.user.entity.Orders;
+import edu.nf.wuneng.user.entity.Users;
 import edu.nf.wuneng.vo.BaseController;
 import edu.nf.wuneng.vo.ResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -177,6 +178,16 @@ public class AdminController extends BaseController {
         Integer num=(Integer) session.getAttribute("loadCourseByNum");
         List<Discuss> discusses = adminService.listDiscussByNum(num);
         return success(discusses);
+    }
+    @RequestMapping("/addDiscuss")
+    public ResultVO addDiscuss(String text,HttpSession session){
+        Integer num=(Integer) session.getAttribute("loadCourseByNum");
+        System.out.println("num"+num);
+        Users user=(Users) session.getAttribute("user");
+        System.out.println("id"+user.getUserId());
+        System.out.println("text"+text);
+        adminService.addDiscuss(num,user.getUserId(),text);
+        return success(200);
     }
 
     @RequestMapping("/update_courseInfo")

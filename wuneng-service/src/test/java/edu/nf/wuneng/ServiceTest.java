@@ -32,7 +32,7 @@ public class ServiceTest {
 
     @Test
     void testAdminService(){
-
+        adminService.addDiscuss(4,1001,"安排，支持一波");
     }
 
 

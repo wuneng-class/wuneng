@@ -10,11 +10,11 @@ import java.time.Duration;
 
 /**
  * @author YXD
- * @date 2020/4/13
+ * @date 2020/4/13extends AbstractElasticsearchConfiguration
  */
-@Configuration
-public class ElasticsearchConfig extends AbstractElasticsearchConfiguration {
-    @Override
+//@Configuration
+public class ElasticsearchConfig {
+    /*@Override
     public RestHighLevelClient elasticsearchClient() {
         //使用HttpHeaders设置相关的请求头信息
         //HttpHeaders defaultHeaders = new HttpHeaders();
@@ -25,5 +25,5 @@ public class ElasticsearchConfig extends AbstractElasticsearchConfiguration {
                 //.withDefaultHeaders(defaultHeaders)
                 .build();
         return RestClients.create(configuration).rest();
-    }
+    }*/
 }
