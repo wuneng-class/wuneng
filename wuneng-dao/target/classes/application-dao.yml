@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.97.179.195:3306/wuneng?serverTimezone=GMT&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+    druid:
+      maxActive: 1000
+      initialSize: 10
+      maxWait: 1000
+      minIdle: 10
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      maxPoolPreparedStatementPerConnectionSize: 0
+  http:
+    encoding:
+      enabled: true
+      charset: UTF-8
+      force: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2048MB
+      max-request-size: 2048MB
+mybatis:
+  type-aliases-package:
+    - edu.nf.wuneng.user.entity
+    - edu.nf.wuneng.admin.entity
+  mapper-locations: classpath:/mapper/*.xml
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true

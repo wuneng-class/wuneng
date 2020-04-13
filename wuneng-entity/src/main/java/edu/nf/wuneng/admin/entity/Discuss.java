@@ -1,8 +1,10 @@
 package edu.nf.wuneng.admin.entity;
 
+import edu.nf.wuneng.user.entity.Users;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author YXD
@@ -15,5 +17,5 @@ public class Discuss {
     private Integer uid;
     private String text;
     private Date time;
-
+    private List<Users> listUsers;
 }

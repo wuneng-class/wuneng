@@ -1,7 +1,10 @@
 package edu.nf.wuneng.admin.service;
 
+import com.github.pagehelper.PageInfo;
 import edu.nf.wuneng.admin.entity.*;
+import edu.nf.wuneng.user.entity.Orders;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -32,5 +35,18 @@ public interface AdminService {
     void addPayCourse(PayCourse payCourse);
 
     void addPayCourseAddr(List<PayCourseAddr> payCourseAddr);
+
+    BigDecimal sumToday();
+    BigDecimal sumYesterday();
+    Integer countOrdersToday();
+    Integer countPayedToday();
+    Integer countNotPayToday();
+    Integer countOrdersYesterday();
+    Integer countPayedYesterday();
+    Integer countNotPayedYesterday();
+
+    PageInfo<Orders> listOrders(Integer pageNum,Integer pageSize);
+    PageInfo<Discuss> listDiscuss(Integer pageNum,Integer pageSize);
+    List<Discuss> listDiscussByNum(Integer num);
 
 }

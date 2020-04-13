@@ -1,6 +1,7 @@
 package edu.nf.wuneng.user.dao;
 
 import edu.nf.wuneng.admin.entity.PayCourse;
+import edu.nf.wuneng.user.entity.Coupons;
 import edu.nf.wuneng.user.entity.Orders;
 import edu.nf.wuneng.user.entity.Users;
 import org.apache.ibatis.annotations.Mapper;
@@ -26,4 +27,7 @@ public interface UserDao {
 
     void updateOrders(String id);
 
+    List<Coupons> listCoupons(Integer id);
+
+    void updateCoupons(@Param("cid") String cid,@Param("uid") Integer uid);
 }

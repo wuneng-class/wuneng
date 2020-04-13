@@ -32,7 +32,8 @@ public class SpringConfig implements WebMvcConfigurer {
                         "/src/**",
                         "/assets/**",
                         "video/**",
-                        "/list_courseInfo"
+                        "/list_courseInfo",
+                        "/admin/**"
                 );
     }
 }

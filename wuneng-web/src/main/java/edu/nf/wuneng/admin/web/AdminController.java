@@ -1,8 +1,10 @@
 package edu.nf.wuneng.admin.web;
 
+import com.github.pagehelper.PageInfo;
 import edu.nf.wuneng.admin.entity.*;
 import edu.nf.wuneng.admin.service.AdminService;
 import edu.nf.wuneng.conf.UploadVideo;
+import edu.nf.wuneng.user.entity.Orders;
 import edu.nf.wuneng.vo.BaseController;
 import edu.nf.wuneng.vo.ResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -146,10 +148,35 @@ public class AdminController extends BaseController {
         return success(payCourseById);
     }
 
+    @RequestMapping("/getPayCourseById")
+    public ResultVO<PayCourse> getPayCourseById(Integer id){
+        PayCourse payCourseById = adminService.getPayCourseById(id);
+        return success(payCourseById);
+    }
+
     @RequestMapping("/getCourseByNum")
     public ResultVO<CourseInfo> getCourseByNum(Integer num){
         CourseInfo courseByNum = adminService.getCourseByNum(num);
         return success(courseByNum);
+    }
+
+    @RequestMapping("/toCourseByNum")
+    public ResultVO loadCourseByNum(Integer num,HttpSession session){
+        session.setAttribute("loadCourseByNum",num);
+        return success(200);
+    }
+
+    @RequestMapping("/loadCourseInfoByNum")
+    public ResultVO<CourseInfo> loadCourseInfoByNum(HttpSession session){
+        Integer num=(Integer) session.getAttribute("loadCourseByNum");
+        CourseInfo courseByNum = adminService.getCourseByNum(num);
+        return success(courseByNum);
+    }
+    @RequestMapping("/loadDiscussByNum")
+    public ResultVO<List<Discuss>> loadDiscussByNum(HttpSession session){
+        Integer num=(Integer) session.getAttribute("loadCourseByNum");
+        List<Discuss> discusses = adminService.listDiscussByNum(num);
+        return success(discusses);
     }
 
     @RequestMapping("/update_courseInfo")
@@ -158,7 +185,46 @@ public class AdminController extends BaseController {
         return success(200);
     }
 
+    @RequestMapping("/admin/adminIndex")
+    public ResultVO<AdminIndex> adminIndex(){
+        BigDecimal sumToday = adminService.sumToday();
 
+        BigDecimal sumYesterday = adminService.sumYesterday();
 
+        Integer countOrdersToday = adminService.countOrdersToday();
 
+        Integer countPayedToday = adminService.countPayedToday();
+
+        Integer countNotPayToday = adminService.countNotPayToday();
+
+        Integer countOrdersYesterday = adminService.countOrdersYesterday();
+
+        Integer countPayedYesterday = adminService.countPayedYesterday();
+
+        Integer countNotPayedYesterday = adminService.countNotPayedYesterday();
+
+        AdminIndex adminIndex=new AdminIndex();
+        adminIndex.setSumToday(sumToday);
+        adminIndex.setSumYesterday(sumYesterday);
+        adminIndex.setCountOrdersToday(countOrdersToday);
+        adminIndex.setCountPayedToday(countPayedToday);
+        adminIndex.setCountNotPayToday(countNotPayToday);
+        adminIndex.setCountOrdersYesterday(countOrdersYesterday);
+        adminIndex.setCountPayedYesterday(countPayedYesterday);
+        adminIndex.setCountNotPayedYesterday(countNotPayedYesterday);
+        return success(adminIndex);
+    }
+
+    @RequestMapping("/listOrders")
+    public ResultVO<PageInfo<Orders>> listOrders(Integer pageNum,Integer pageSize){
+        PageInfo<Orders> ordersPageInfo = adminService.listOrders(pageNum, pageSize);
+        return success(ordersPageInfo);
+    }
+
+    @RequestMapping("/listDiscuss")
+    public ResultVO<PageInfo<Discuss>> listDiscuss(Integer pageNum,Integer pageSize){
+        System.out.println("1");
+        PageInfo<Discuss> discussPageInfo = adminService.listDiscuss(pageNum, pageSize);
+        return success(discussPageInfo);
+    }
 }

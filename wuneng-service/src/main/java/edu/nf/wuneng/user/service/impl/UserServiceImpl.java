@@ -5,6 +5,7 @@ import edu.nf.wuneng.admin.entity.PayCourse;
 import edu.nf.wuneng.exception.AccessException;
 import edu.nf.wuneng.user.dao.UserDao;
 import edu.nf.wuneng.user.entity.Code;
+import edu.nf.wuneng.user.entity.Coupons;
 import edu.nf.wuneng.user.entity.Orders;
 import edu.nf.wuneng.user.entity.Users;
 import edu.nf.wuneng.user.service.UserService;
@@ -90,6 +91,24 @@ public class UserServiceImpl implements UserService {
             userDao.updateOrders(id);
         } catch (Exception e) {
             throw new AccessException("服务器错误");
+        }
+    }
+
+    @Override
+    public List<Coupons> listCoupons(Integer id) {
+        try {
+            return userDao.listCoupons(id);
+        } catch (Exception e) {
+            throw new AccessException("服务器错误");
+        }
+    }
+
+    @Override
+    public void updateCoupons(String cid, Integer uid) {
+        try {
+            userDao.updateCoupons(cid,uid);
+        } catch (Exception e) {
+            throw new AccessException("服务器异常");
         }
     }
 }

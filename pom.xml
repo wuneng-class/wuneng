@@ -33,6 +33,7 @@
         <druid.version>1.1.10</druid.version>
         <fastdfs.version>1.26.7</fastdfs.version>
         <alipay.version>4.9.11.ALL</alipay.version>
+<!--        <elasticsearch.version>7.6.2</elasticsearch.version>-->
     </properties>
 
     <!-- 添加一些spring-boot父模块没有的依赖 -->
@@ -69,6 +70,7 @@
                 <artifactId>alipay-sdk-java</artifactId>
                 <version>${alipay.version}</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 

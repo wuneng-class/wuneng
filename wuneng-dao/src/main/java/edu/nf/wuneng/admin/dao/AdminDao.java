@@ -1,8 +1,11 @@
 package edu.nf.wuneng.admin.dao;
 
 import edu.nf.wuneng.admin.entity.*;
+import edu.nf.wuneng.user.entity.Orders;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -34,4 +37,17 @@ public interface AdminDao {
     void addPayCourse(PayCourse payCourse);
 
     void addPayCourseAddr(List<PayCourseAddr> payCourseAddr);
+
+    BigDecimal  sumToday(); //今日收入
+    BigDecimal sumYesterday(); //昨日收入
+    Integer countOrdersToday(); //今日订单量
+    Integer countPayedToday(); //今日已付款
+    Integer countNotPayToday(); //今日未付款
+    Integer countOrdersYesterday(); //昨日订单量
+    Integer countPayedYesterday(); //昨日已付款
+    Integer countNotPayedYesterday(); //昨日未付款
+
+    List<Orders> listOrders(@Param("pageNum") Integer pageNum,@Param("pageSize") Integer pageSize);
+    List<Discuss> listDiscuss(@Param("pageNum") Integer pageNum,@Param("pageSize") Integer pageSize);
+    List<Discuss> listDiscussByNum(Integer num);
 }

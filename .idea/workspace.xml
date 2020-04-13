@@ -4,40 +4,31 @@
     <list default="true" id="e74b19ba-c898-41e5-9fee-9258f842a251" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/admin/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/admin/dao/AdminDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/user/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/edu/nf/wuneng/admin/dao/AdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/target/classes/edu/nf/wuneng/admin/dao/AdminDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/target/classes/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/target/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-entity/src/main/java/edu/nf/wuneng/admin/entity/PayCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-entity/src/main/java/edu/nf/wuneng/admin/entity/PayCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-entity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-entity/src/main/java/edu/nf/wuneng/admin/entity/Discuss.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-entity/src/main/java/edu/nf/wuneng/admin/entity/Discuss.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-entity/src/main/java/edu/nf/wuneng/user/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-entity/src/main/java/edu/nf/wuneng/user/entity/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/classes/edu/nf/wuneng/admin/entity/PayCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-entity/target/classes/edu/nf/wuneng/admin/entity/PayCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-entity/target/classes/edu/nf/wuneng/user/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-entity/target/classes/edu/nf/wuneng/user/entity/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/user/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-service/src/test/java/edu/nf/wuneng/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/test/java/edu/nf/wuneng/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/classes/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/target/test-classes/edu/nf/wuneng/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/target/test-classes/edu/nf/wuneng/ServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/admin/web/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/admin/web/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/conf/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/conf/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/user/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/user/web/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/admin_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/admin_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/courseUpload.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/courseUpload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/css/carts.css" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/css/carts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/classInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/classInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/classType.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/classType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/getOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/getOrder.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/hotsource.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/hotsource.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/video/1.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/admin/web/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/admin/web/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/user/web/PaySuccessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/user/web/PaySuccessController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/user/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/edu/nf/wuneng/user/web/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/admin_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/admin_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/courseUpload.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/courseUpload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/carts.css" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/css/carts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/hotsource.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/hotsource.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/tjorder.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/target/classes/static/tjorder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/target/classes/static/video/1.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/orderInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/orderInfo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +55,8 @@
         <option value="mybatis-mapper" />
         <option value="Interface" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -118,7 +109,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -126,28 +117,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaproject5\wuneng\wuneng-web\target\classes\static\css" />
       <recent name="D:\ideaproject5\wuneng\wuneng-web\src\main\resources\static" />
       <recent name="D:\ideaproject5\wuneng\wuneng-web\src\main\resources\static\js" />
       <recent name="D:\ideaproject5\wuneng\wuneng-web\src\main\resources\static\images" />
       <recent name="D:\ideaproject5\wuneng\wuneng-web\src\main\resources\static\font" />
-      <recent name="D:\ideaproject5\wuneng\wuneng-web\src\main\resources\static\css" />
     </key>
   </component>
   <component name="RestServicesNavigator">
     <treeState>
       <expand>
         <path>
-          <item name="Found 2 services " type="fcff1e1b:RestServiceStructure$RootNode" />
-        </path>
-        <path>
-          <item name="Found 2 services " type="fcff1e1b:RestServiceStructure$RootNode" />
-          <item name="wuneng-web" type="c588b436:RestServiceStructure$ProjectNode" />
+          <item name="Found 24 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="RunManager" selected="Application.WunengApplication">
+  <component name="RunManager" selected="JUnit.ServiceTest.testAdminService">
     <configuration name="WunengApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.nf.wuneng.WunengApplication" />
       <module name="wuneng-web" />
@@ -161,8 +148,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.testAddCourseAddr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wuneng-service" />
+    <configuration name="ControllerTest.testAdminService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wuneng-web" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.nf.wuneng.*" />
@@ -170,8 +157,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.nf.wuneng" />
-      <option name="MAIN_CLASS_NAME" value="edu.nf.wuneng.ServiceTest" />
-      <option name="METHOD_NAME" value="testAddCourseAddr" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.wuneng.ControllerTest" />
+      <option name="METHOD_NAME" value="testAdminService" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -234,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WunengApplication" />
         <item itemvalue="JUnit.ServiceTest.testAdminService" />
+        <item itemvalue="JUnit.ControllerTest.testAdminService" />
+        <item itemvalue="Application.WunengApplication" />
         <item itemvalue="JUnit.ServiceTest.testListCourseCation" />
         <item itemvalue="JUnit.ServiceTest.testListCourseInfo" />
-        <item itemvalue="JUnit.ServiceTest.testAddCourseAddr" />
       </list>
     </recent_temporary>
   </component>
@@ -318,6 +305,13 @@
       <workItem from="1586480732753" duration="4073000" />
       <workItem from="1586494650458" duration="4859000" />
       <workItem from="1586530142932" duration="365000" />
+      <workItem from="1586581886051" duration="3090000" />
+      <workItem from="1586585038212" duration="901000" />
+      <workItem from="1586604469762" duration="9246000" />
+      <workItem from="1586671878340" duration="4913000" />
+      <workItem from="1586690042643" duration="9341000" />
+      <workItem from="1586755398442" duration="9450000" />
+      <workItem from="1586776785746" duration="6221000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization project">
       <created>1583479332302</created>
@@ -410,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586355328628</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="课程购买">
+      <created>1586582140410</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1586582140410</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,46 +435,46 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1585754683440" />
-    <state x="102" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586152382393">
+    <state x="102" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586676480065">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="102" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1586152382393" />
-    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1586411494048">
+    <state x="102" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1586676480065" />
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1586779157164">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586411494048" />
-    <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584598271643">
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586779157164" />
+    <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586604627843">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1584598271643" />
-    <state x="426" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586497007131">
+    <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1586604627843" />
+    <state x="426" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586695775729">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="426" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.738@0.0.1366.738" timestamp="1586497007131" />
-    <state x="331" y="0" key="CommitChangelistDialog2" timestamp="1586355323255">
+    <state x="426" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.738@0.0.1366.738" timestamp="1586695775729" />
+    <state x="186" y="0" key="CommitChangelistDialog2" timestamp="1586582133882">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="331" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1586355323255" />
-    <state x="327" y="127" key="FileChooserDialogImpl" timestamp="1586500185322">
+    <state x="186" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1586582133882" />
+    <state x="456" y="127" key="FileChooserDialogImpl" timestamp="1586782422489">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="327" y="127" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586500185322" />
-    <state width="1323" height="285" key="GridCell.Tab.0.bottom" timestamp="1586530513135">
+    <state x="456" y="127" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586782422489" />
+    <state width="1323" height="260" key="GridCell.Tab.0.bottom" timestamp="1586780913617">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="285" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586530513135" />
-    <state width="1323" height="285" key="GridCell.Tab.0.center" timestamp="1586530513135">
+    <state width="1323" height="260" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586780913617" />
+    <state width="1323" height="260" key="GridCell.Tab.0.center" timestamp="1586780913617">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="285" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586530513135" />
-    <state width="1323" height="285" key="GridCell.Tab.0.left" timestamp="1586530513135">
+    <state width="1323" height="260" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586780913617" />
+    <state width="1323" height="260" key="GridCell.Tab.0.left" timestamp="1586780913617">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="285" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586530513135" />
-    <state width="1323" height="285" key="GridCell.Tab.0.right" timestamp="1586530513135">
+    <state width="1323" height="260" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586780913617" />
+    <state width="1323" height="260" key="GridCell.Tab.0.right" timestamp="1586780913617">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="285" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586530513135" />
+    <state width="1323" height="260" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586780913617" />
     <state width="1323" height="165" key="GridCell.Tab.1.bottom" timestamp="1583926229130">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -498,14 +499,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="323" y="66" key="NewModule_or_Project.wizard/0.0.1366.738@0.0.1366.738" timestamp="1584511891744" />
-    <state x="149" y="0" key="SettingsEditor" timestamp="1586496025631">
+    <state x="149" y="0" key="SettingsEditor" timestamp="1586766881654">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="149" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1586496025631" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1586355335534">
+    <state x="149" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1586766881654" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1586582219448">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1586355335534" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1586582219448" />
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586690735021">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1586690735021" />
     <state x="363" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1583889742013">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

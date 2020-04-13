@@ -1,12 +1,15 @@
 package edu.nf.wuneng.admin.service.impl;
 
+import com.github.pagehelper.PageInfo;
 import edu.nf.wuneng.admin.dao.AdminDao;
 import edu.nf.wuneng.admin.entity.*;
 import edu.nf.wuneng.admin.service.AdminService;
 import edu.nf.wuneng.exception.AccessException;
+import edu.nf.wuneng.user.entity.Orders;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -123,6 +126,107 @@ public class AdminServiceImpl implements AdminService {
             adminDao.addPayCourseAddr(payCourseAddr);
         } catch (Exception e) {
             throw new AccessException("添加失败");
+        }
+    }
+
+    @Override
+    public BigDecimal sumToday() {
+        try {
+            return adminDao.sumToday();
+        } catch (Exception e) {
+            throw new AccessException("服务器异常");
+        }
+    }
+
+    @Override
+    public BigDecimal sumYesterday() {
+        try {
+            return adminDao.sumYesterday();
+        } catch (Exception e) {
+            throw new AccessException("服务器异常");
+        }
+    }
+
+    @Override
+    public Integer countOrdersToday() {
+        try {
+            return adminDao.countOrdersToday();
+        } catch (Exception e) {
+            throw new AccessException("服务器异常");
+        }
+    }
+
+    @Override
+    public Integer countPayedToday() {
+        try {
+            return adminDao.countPayedToday();
+        } catch (Exception e) {
+            throw new AccessException("服务器异常");
+        }
+    }
+
+    @Override
+    public Integer countNotPayToday() {
+        try {
+            return adminDao.countNotPayToday();
+        } catch (Exception e) {
+            throw new AccessException("服务器异常");
+        }
+    }
+
+    @Override
+    public Integer countOrdersYesterday() {
+        try {
+            return adminDao.countOrdersYesterday();
+        } catch (Exception e) {
+            throw new AccessException("服务器异常");
+        }
+    }
+
+    @Override
+    public Integer countPayedYesterday() {
+        try {
+            return adminDao.countPayedYesterday();
+        } catch (Exception e) {
+            throw new AccessException("服务器异常");
+        }
+    }
+
+    @Override
+    public Integer countNotPayedYesterday() {
+        try {
+            return adminDao.countNotPayedYesterday();
+        } catch (Exception e) {
+            throw new AccessException("服务器异常");
+        }
+    }
+
+    @Override
+    public PageInfo<Orders> listOrders(Integer pageNum, Integer pageSize) {
+        try {
+            List<Orders> orders = adminDao.listOrders(pageNum, pageSize);
+            return new PageInfo<>(orders);
+        } catch (Exception e) {
+            throw new AccessException("查询错误");
+        }
+    }
+
+    @Override
+    public PageInfo<Discuss> listDiscuss(Integer pageNum, Integer pageSize) {
+        try {
+            List<Discuss> list=adminDao.listDiscuss(pageNum,pageSize);
+            return new PageInfo<>(list);
+        } catch (Exception e) {
+            throw new AccessException("查询失败");
+        }
+    }
+
+    @Override
+    public List<Discuss> listDiscussByNum(Integer num) {
+        try {
+            return adminDao.listDiscussByNum(num);
+        } catch (Exception e) {
+            throw new AccessException("查询错误");
         }
     }
 }

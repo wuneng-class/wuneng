@@ -5,6 +5,7 @@ import edu.nf.wuneng.CodeUtil;
 import edu.nf.wuneng.SmsUtil;
 import edu.nf.wuneng.admin.entity.PayCourse;
 import edu.nf.wuneng.user.entity.Code;
+import edu.nf.wuneng.user.entity.Coupons;
 import edu.nf.wuneng.user.entity.Orders;
 import edu.nf.wuneng.user.entity.Users;
 import edu.nf.wuneng.user.service.UserService;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author YXD
@@ -91,5 +93,12 @@ public class UserController extends BaseController {
     public ResultVO<Orders> successOrders(HttpSession session){
         Orders orders=(Orders) session.getAttribute("successOrders");
         return success(orders);
+    }
+
+    @RequestMapping("/getCoupons")
+    public ResultVO<List<Coupons>> getCoupons(HttpSession session){
+        Users user=(Users) session.getAttribute("user");
+        List<Coupons> coupons = userService.listCoupons(user.getUserId());
+        return success(coupons);
     }
 }

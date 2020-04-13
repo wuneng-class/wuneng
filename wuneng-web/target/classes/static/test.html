@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+    $(function(){
+        $.ajax({
+            url:'showHotCourse',
+            method:'get',
+            success:function(result){
+                if(result.code==200){
+                    alert(result.data.name);
+                }else{
+                    alert(result.message);
+                }
+            }
+        })
+    })
+</script>
+</body>
+</html>

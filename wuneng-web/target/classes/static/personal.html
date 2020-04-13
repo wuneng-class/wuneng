@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style type="text/css">
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .box-head{
+            background-color: #2F2F2F;
+        }
+        .bak-col{
+            background-color: #F4F4F4;
+        }
+        .box-order{
+            border:2px solid #FFFFFF;
+        }
+
+    </style>
+</head>
+<body class="bak-col">
+<div class="row box-head">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+        <img src="image/logo2.png">
+    </div>
+    <div class="col-md-1">
+
+        <a>王进喜</a>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<br>
+
+<div class="row">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-2">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#home" data-toggle="tab">课程表</a></li>
+            <li><a href="#profile" data-toggle="tab">全部订单</a></li>
+            <li><a href="#message" data-toggle="tab">收藏</a></li>
+            <li><a href="#settings" data-toggle="tab">优惠券</a></li>
+            <li><a href="#userInfo" data-toggle="tab">个人信息</a></li>
+            <li><a href="#buycourse" data-toggle="tab">已购买课程</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-7">
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <table class="table table-hover">
+                    <tr class="active">
+                        <th>编号</th>
+                        <th>课程名</th>
+                        <th>时间</th>
+                    </tr>
+                    <tr class="success">
+                        <td>1</td>
+                        <td>java基础</td>
+                        <td>2020.4.5</td>
+                    </tr>
+                    <tr class="success">
+                        <td>2</td>
+                        <td>C#基础</td>
+                        <td>2020.4.5</td>
+                    </tr>
+                    <tr class="success">
+                        <td>3</td>
+                        <td>python基础</td>
+                        <td>2020.4.5</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane" id="profile">
+                <div class="row box-order">
+                    <div class="col-md-6">课程订单</div>
+                    <div class="col-md-2">价格</div>
+                    <div class="col-md-4">状态</div>
+                </div>
+                <div class="row box-order">
+                    <div class="col-md-6">
+                        <img src="images/androidstudio.jpg">
+                        安卓基础
+                    </div>
+                    <div class="col-md-2">
+                        <br><br>
+                        <p>￥<span>23.3</span></p>
+                        <br>
+                    </div>
+                    <div class="col-md-4">
+                        <br><br>
+                        <p>已付款</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="row box-order">
+                    <div class="col-md-6">
+                        <img src="images/androidstudio.jpg">
+                        安卓基础
+                    </div>
+                    <div class="col-md-2">
+                        <br><br>
+                        <p>￥<span>23.3</span></p>
+                        <br>
+                    </div>
+                    <div class="col-md-4">
+                        <br><br>
+                        <a>未付款</a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="message">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/android.jpg">
+                        <p>安卓基础</p>
+                        <p>收藏于：2020-3-4</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/android.jpg">
+                        <p>安卓基础</p>
+                        <p>收藏于：2020-3-4</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/android.jpg">
+                        <p>安卓基础</p>
+                        <p>收藏于：2020-3-4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="settings">
+                <p>我的优惠券</p>
+                <img src="images/youhuiquan.jpg">
+                <img src="images/youhuiquan.jpg">
+                <img src="images/youhuiquan.jpg">
+            </div>
+            <div class="tab-pane" id="userInfo">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <img src="images/1999.jpg" width="100" height="100" class="img-circle">
+                        <input class="btn btn-default" type="button" value="更换头像">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <p>姓名：王进喜</p>
+                        <p>性别:男</p>
+                        <p>邮箱:1717282992@qq.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="buycourse">
+                <div class="col-md-4">
+                    <img src="images/android.jpg">
+                    <p>安卓基础</p>
+                    <p>购买于：2020-3-4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+    </div>
+</div>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

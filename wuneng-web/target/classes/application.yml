@@ -1,0 +1,49 @@
+server:
+  # 设置tomcat
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 50
+  # 指定端口
+  port: 8080
+  # 指定项目的ContextPath路径
+  servlet:
+    context-path: /wuneng
+spring:
+  # 字符编码过滤器配置（CharacterEncodingFilter）
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 200MB
+      max-request-size: 200MB
+  mail:
+    username: 1574784536@qq.com
+    password: imvagvjyanmzbagi
+    host: smtp.qq.com
+  # 日期格式化
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  # 包含dao的yml配置文件,对应的是application-xxx.yml文件的xxx名称
+  profiles:
+    include: dao
+fdfs:
+  so-timeout: 3000
+  connect-timeout: 1000
+  thumb-image:
+    width: 100
+    height: 100
+  tracker-list:
+    - 39.97.179.195:22122
+upload:
+  base-url: http://39.97.179.195/
+  allow-types:
+    - image/jpeg
+    - image/png
+    - image/bmp
+    - image/gif

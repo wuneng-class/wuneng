@@ -1,5 +1,6 @@
 package edu.nf.wuneng.user.entity;
 
+import edu.nf.wuneng.admin.entity.CourseInfo;
 import edu.nf.wuneng.admin.entity.PayCourse;
 import lombok.Data;
 
@@ -19,4 +20,5 @@ public class Users {
     private String sex;
     private String email;
     private List<PayCourse> listPayCourse;
+
 }
