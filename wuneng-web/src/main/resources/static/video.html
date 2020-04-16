@@ -38,9 +38,6 @@
     }
   </style>
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-
-
-
 </head>
 <body>
 
@@ -51,7 +48,7 @@
     <img src="image/logo2.png">
   </div>
   <div class="col-md-1">
-    <a>王进喜</a>
+<!--    <a>王进喜</a>-->
   </div>
   <div class="col-md-1"></div>
 </div>
@@ -75,7 +72,7 @@
     <h5> 视频选集</h5>
     <table class="table table-hover">
       <tr>
-        <td>SpringMVC01</td>
+        <td id="anth"></td>
       </tr>
     </table>
   </div>
@@ -108,13 +105,13 @@
             <img src="images/1999.jpg" width="50" height="50">
           </div>
           <div class="col-sm-10">
-            <textarea rows="4" cols="70">请自觉遵守互联网相关政策法规</textarea>
-            <input type="button" name="" value="发表评论" class="btn btn-danger">
+            <textarea rows="4" cols="70" placeholder="请自觉遵守互联网相关政策法规" id="areaText"></textarea>
+            <input type="button" id="btnDiscuss" value="发表评论" class="btn btn-danger">
             <hr>
           </div>
-
         </div>
-        <div class="row">
+        <span id="spanLoadDiscuss"></span>
+        <!--<div class="row">
           <div class="col-sm-2">
             <img src="images/1999.jpg" width="50" height="50">
           </div>
@@ -125,38 +122,14 @@
             <p>2020-5-5</p>
             <hr>
           </div>
-        </div>
+        </div>-->
 
-        <div class="row">
-          <div class="col-sm-2">
-            <img src="images/1999.jpg" width="50" height="50">
-          </div>
-          <div class="col-sm-1"></div>
-          <div class="col-sm-10">
-            <p>王进喜</p>
-            <p>隔壁小孩都馋哭了隔壁小孩都馋哭了隔壁小孩都馋哭了</p>
-            <p>2020-5-5</p>
-            <hr>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-sm-2">
-            <img src="images/1999.jpg" width="50" height="50">
-          </div>
-          <div class="col-sm-1"></div>
-          <div class="col-sm-10">
-            <p>王进喜</p>
-            <p>隔壁小孩都馋哭了隔壁小孩都馋哭了隔壁小孩都馋哭了</p>
-            <p>2020-5-5</p>
-            <hr>
-          </div>
-        </div>
       </div>
     </div>
   </div>
   <div class="col-sm-2">
-    <h3>相关推荐</h3>
+    <h3>更多推荐</h3>
     <img src="images/android.jpg">
     <p>安卓入门到精通</p>
     <img src="images/androidstudio.jpg">
@@ -169,21 +142,75 @@
 </div>
 <script src="js/jquery-1.12.4.min.js"></script>
 <script>
-  $(function(){
-    $.ajax({
-      url:'showHotCourse',
-      method:'get',
-      success:function(result){
-        if(result.code==200){
-          $('#h3context').html(result.data.context);
-          $('#loadVideo').attr('src',result.data.addr);
-          $('#ptext').html(result.data.text);
-        }else{
-          alert(result.message);
+  function showCourse(){
+    $(function(){
+      $.ajax({
+        url:'showHotCourse',
+        method:'get',
+        success:function(result){
+          if(result.code==200){
+            $('#h3context').html(result.data.context);
+            $('#loadVideo').attr('src',result.data.addr);
+            $('#ptext').html(result.data.text);
+            $('#anth').html(result.data.context);
+          }else{
+            alert(result.message);
+          }
         }
-      }
+      })
     })
+  }
+  function loadDiscuss(){
+    $(function(){
+      $.ajax({
+        url:'listDiscussByIt',
+        method:'get',
+        success:function(result){
+          if(result.code==200){
+            $.each(result.data,function(i,obj){
+              $.each(obj.listUsers,function(j,obj2){
+                $('#spanLoadDiscuss').append(
+                        '<div class="row dd">'
+                        +'<div class="col-sm-2">'
+                        +'<img src="'+obj2.userHead+'" width="50" height="50">'
+                        +'</div>'
+                        +'<div class="col-sm-1"></div>'
+                        +'<div class="col-sm-10">'
+                        +'<p>'+obj2.userName+'</p>'
+                        +'<p>'+obj.text+'</p>'
+                        +'<p>'+obj.time+'</p>'
+                        +'<hr>'
+                        +'</div>'
+                        +'</div>'
+                )
+              })
+            })
+          }
+        }
+      })
+    })
+  }
+
+  $('#btnDiscuss').on('click',function(){
+    var text=$('#areaText').val();
+    if(text!=null && text!=''){
+      $.ajax({
+        url:'addDiscussByIt?text='+text,
+        method:'post',
+        success:function(result){
+          if(result.code==200){
+            $('.dd').remove();
+            loadDiscuss();
+            $('#areaText').val('');
+          }
+        }
+      })
+    }else{
+      alert('请输入内容');
+    }
   })
+  showCourse();
+  loadDiscuss();
 </script>
 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>

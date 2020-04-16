@@ -2,6 +2,7 @@ package edu.nf.wuneng.admin.service.impl;
 
 import com.github.pagehelper.PageInfo;
 import edu.nf.wuneng.admin.dao.AdminDao;
+import edu.nf.wuneng.es.dao.ESCourseDao;
 import edu.nf.wuneng.admin.entity.*;
 import edu.nf.wuneng.admin.service.AdminService;
 import edu.nf.wuneng.exception.AccessException;
@@ -20,6 +21,9 @@ import java.util.List;
 public class AdminServiceImpl implements AdminService {
     @Autowired
     private AdminDao adminDao;
+
+    @Autowired
+    private ESCourseDao esCourseDao;
 
     @Override
     public Admin loginAdmin(String id) {
@@ -236,6 +240,33 @@ public class AdminServiceImpl implements AdminService {
             adminDao.addDiscuss(pid,uid,text);
         } catch (Exception e) {
             throw new AccessException("添加失败");
+        }
+    }
+
+    @Override
+    public List<Discuss> listDiscussByIt(Integer id) {
+        try {
+            return adminDao.listDiscussByIt(id);
+        } catch (Exception e) {
+            throw new AccessException("查询错误");
+        }
+    }
+
+    @Override
+    public void addCollection(Integer uid, Integer cid) {
+        try {
+            adminDao.addCollection(uid,cid);
+        } catch (Exception e) {
+            throw new AccessException("收藏失败");
+        }
+    }
+
+    @Override
+    public List<ESCourse> listESCourse(String type) {
+        try {
+            return esCourseDao.listESCourse(type);
+        } catch (Exception e) {
+            throw new AccessException("查询错误");
         }
     }
 }

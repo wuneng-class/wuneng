@@ -24,17 +24,7 @@ public class ESCourse {
     @Field(type = FieldType.Text)
     private String img;
 
-    public ESCourse() {
-    }
 
-    public ESCourse(String id, Integer num, String type, String name, String introduct, String img) {
-        this.id = id;
-        this.num = num;
-        this.type = type;
-        this.name = name;
-        this.introduct = introduct;
-        this.img = img;
-    }
 
     public String getId() {
         return id;

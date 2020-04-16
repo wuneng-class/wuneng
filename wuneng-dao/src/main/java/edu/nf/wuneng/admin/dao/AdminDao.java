@@ -50,6 +50,8 @@ public interface AdminDao {
     List<Orders> listOrders(@Param("pageNum") Integer pageNum,@Param("pageSize") Integer pageSize);
     List<Discuss> listDiscuss(@Param("pageNum") Integer pageNum,@Param("pageSize") Integer pageSize);
     List<Discuss> listDiscussByNum(Integer num);
+    List<Discuss> listDiscussByIt(Integer id);
 
     void addDiscuss(@Param("pid") Integer pid,@Param("uid") Integer uid,@Param("text") String text);
+    void addCollection(@Param("uid") Integer uid,@Param("cid") Integer cid);
 }

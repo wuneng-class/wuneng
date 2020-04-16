@@ -36,6 +36,9 @@
         .font-size{
             font-size: 80%;
         }
+        .hands{
+            cursor:pointer;
+        }
     </style>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
@@ -83,13 +86,13 @@
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-1">
-        <i style="font-size: 40px;" class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+        <i style="font-size: 40px;" class="fa fa-thumbs-o-up hands" aria-hidden="true" id="btnsan"></i>
     </div>
     <div class="col-sm-1">
-        <i style="font-size: 40px;" class="fa fa-star-o" aria-hidden="true"></i>
+        <i style="font-size: 40px;" class="fa fa-star-o hands" aria-hidden="true" id="btncollection"></i>
     </div>
     <div class="col-sm-1">
-        <i style="font-size: 40px;" class="fa fa-share-alt" aria-hidden="true"></i>
+        <i style="font-size: 40px;" class="fa fa-share-alt hands" aria-hidden="true"></i>
     </div>
 </div>
 <div class="row">
@@ -144,7 +147,9 @@
         <p>.NET基础与实战</p>
     </div>
 </div>
+<!--<input type="button" id="btnaa" value="点我啊">-->
 <script src="js/jquery-1.12.4.min.js"></script>
+<script src="layui/layui.js"></script>
 <script>
     function loadVideo(){
         $(function(){
@@ -214,6 +219,31 @@
         }else{
             alert('请输入内容');
         }
+    })
+
+    $('#btncollection').on('click',function(){
+        layui.use(['layer', 'form'], function(){
+            // layer.msg('玩命提示中');
+            layer.confirm('您是否确定收藏？', {
+                btn: ['这次一定','下次一定'] //按钮
+            }, function(){
+                $.ajax({
+                    url:'addCollectionByCourseInfo',
+                    method:'get',
+                    success:function(result){
+                        if(result.code==200){
+                            layer.msg('已添至收藏', {icon: 1});
+                        }
+                    }
+                })
+            });
+        });
+    })
+
+    $('#btnsan').on('click',function(){
+        layui.use(['layer', 'form'], function(){
+            layer.msg('谢谢支持');
+        });
     })
 
     loadVideo();

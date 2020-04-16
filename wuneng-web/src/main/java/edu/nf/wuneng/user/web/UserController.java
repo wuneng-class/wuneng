@@ -98,7 +98,11 @@ public class UserController extends BaseController {
     @RequestMapping("/getCoupons")
     public ResultVO<List<Coupons>> getCoupons(HttpSession session){
         Users user=(Users) session.getAttribute("user");
-        List<Coupons> coupons = userService.listCoupons(user.getUserId());
-        return success(coupons);
+        if(user!=null){
+            List<Coupons> coupons = userService.listCoupons(user.getUserId());
+            return success(coupons);
+        }else{
+            return success(200);
+        }
     }
 }

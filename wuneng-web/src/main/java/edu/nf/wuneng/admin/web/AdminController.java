@@ -3,6 +3,7 @@ package edu.nf.wuneng.admin.web;
 import com.github.pagehelper.PageInfo;
 import edu.nf.wuneng.admin.entity.*;
 import edu.nf.wuneng.admin.service.AdminService;
+import edu.nf.wuneng.conf.ESConfig;
 import edu.nf.wuneng.conf.UploadVideo;
 import edu.nf.wuneng.user.entity.Orders;
 import edu.nf.wuneng.user.entity.Users;
@@ -119,16 +120,33 @@ public class AdminController extends BaseController {
 
     @RequestMapping("/get_hotCourseById")
     public void getHotCourseById(Integer id, HttpSession session, HttpServletResponse response) throws IOException {
-        session.setAttribute("id",id);
+        session.setAttribute("get_hotCourseById",id);
         response.sendRedirect("video.html");
     }
 
     @RequestMapping("/showHotCourse")
     public ResultVO<HotCourse> showHotCourse(HttpSession session){
-        Integer id= (Integer) session.getAttribute("id");
+        Integer id= (Integer) session.getAttribute("get_hotCourseById");
         HotCourse hotCourse = adminService.showHotCourse(id);
         return success(hotCourse);
     }
+    @RequestMapping("/listDiscussByIt")
+    public ResultVO<List<Discuss>> listDiscussByIt(HttpSession session){
+        Integer id= (Integer) session.getAttribute("get_hotCourseById");
+        List<Discuss> discusses = adminService.listDiscussByIt(id);
+        return success(discusses);
+    }
+    @RequestMapping("/addDiscussByIt")
+    public ResultVO addDiscussByIt(String text,HttpSession session){
+        Integer id= (Integer) session.getAttribute("get_hotCourseById");
+        System.out.println("id"+id);
+        Users user=(Users) session.getAttribute("user");
+        if(user!=null){
+            adminService.addDiscuss(id,user.getUserId(),text);
+        }
+        return success(200);
+    }
+
 
     @RequestMapping("/list_payCourse")
     public ResultVO<List<PayCourse>> listPayCourse(){
@@ -182,11 +200,20 @@ public class AdminController extends BaseController {
     @RequestMapping("/addDiscuss")
     public ResultVO addDiscuss(String text,HttpSession session){
         Integer num=(Integer) session.getAttribute("loadCourseByNum");
-        System.out.println("num"+num);
         Users user=(Users) session.getAttribute("user");
-        System.out.println("id"+user.getUserId());
-        System.out.println("text"+text);
-        adminService.addDiscuss(num,user.getUserId(),text);
+        if(user!=null){
+            adminService.addDiscuss(num,user.getUserId(),text);
+            return success(200);
+        }
+        return success(400);
+    }
+    @RequestMapping("/addCollectionByCourseInfo")
+    public ResultVO addCollectionByCourseInfo(HttpSession session){
+        Integer cid=(Integer) session.getAttribute("loadCourseByNum");
+        Users user=(Users) session.getAttribute("user");
+        if(user!=null){
+            adminService.addCollection(user.getUserId(),cid);
+        }
         return success(200);
     }
 
@@ -234,8 +261,26 @@ public class AdminController extends BaseController {
 
     @RequestMapping("/listDiscuss")
     public ResultVO<PageInfo<Discuss>> listDiscuss(Integer pageNum,Integer pageSize){
-        System.out.println("1");
         PageInfo<Discuss> discussPageInfo = adminService.listDiscuss(pageNum, pageSize);
         return success(discussPageInfo);
+    }
+
+    @RequestMapping("/search")
+    public ResultVO search(String type,HttpSession session){
+        session.setAttribute("search_type",type);
+        return success(200);
+    }
+
+    @RequestMapping("/loadSearchCourse")
+    public ResultVO<List<ESCourse>> loadSearchCourse(HttpSession session){
+        String type=(String) session.getAttribute("search_type");
+        List<ESCourse> list = adminService.listESCourse(type);
+        return success(list);
+    }
+
+    @RequestMapping("/searchByType")
+    public ResultVO<List<ESCourse>> searchByType(String type){
+        List<ESCourse> list = adminService.listESCourse(type);
+        return success(list);
     }
 }

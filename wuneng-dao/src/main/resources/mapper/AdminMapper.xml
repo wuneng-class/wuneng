@@ -193,5 +193,13 @@
         insert into discuss(p_id,u_id,d_text) values(#{pid},#{uid},#{text})
     </insert>
 
+    <select id="listDiscussByIt" resultMap="discussMapper">
+        select u.u_head,u.u_name,d.d_text,d.d_time from user u,discuss d,it_hot_course i where u.u_id=d.u_id and d.p_id=i.i_id and i.i_id=#{id} order by d_time desc
+    </select>
+
+    <insert id="addCollection">
+        insert into collection(c_u_id,c_id) values(#{uid},#{cid})
+    </insert>
+
 
 </mapper>

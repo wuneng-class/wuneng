@@ -203,8 +203,8 @@
                             <li class="nav-item"><i class="search_btn"><img src="picture/search.png" alt=""></i>
                                 <div id="search">
                                     <form>
-                                        <input type="search" value="" placeholder=在此输入搜索信息" required="">
-                                        <button type="submit" class="btn btn_common blue">搜索</button>
+                                        <input type="search" placeholder=在此输入搜索信息" id="inputSearch">
+                                        <button type="button" id="btnSearch" class="btn btn_common blue">搜索</button>
                                     </form>
                                 </div>
                             </li>
@@ -372,7 +372,7 @@
                         <p>从入门到实战</p>
                         <div class="cources_btn d-flex justify-content-between">
                             <a href="" title="" class="apply_btn">现在观看<i class="flaticon-angle-arrow-pointing-to-right"></i></a>
-                            <span>￥999.9</span>
+                            <span>￥99</span>
                         </div>
                     </div>
                 </div>
@@ -389,7 +389,7 @@
                         <p>从实战到能干</p>
                         <div class="cources_btn d-flex justify-content-between">
                             <a href="" title="" class="apply_btn">现在观看<i class="flaticon-angle-arrow-pointing-to-right"></i></a>
-                            <span>￥999.9</span>
+                            <span>￥99</span>
                         </div>
                     </div>
                 </div>
@@ -406,7 +406,7 @@
                         <p>从入门到精通！</p>
                         <div class="cources_btn d-flex justify-content-between">
                             <a href="" title="" class="apply_btn">现在观看<i class="flaticon-angle-arrow-pointing-to-right"></i></a>
-                            <span>￥999.9</span>
+                            <span>￥99</span>
                         </div>
                     </div>
                 </div>
@@ -510,18 +510,35 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script>
-    $(function () {
+    function loadUser(){
+        $(function () {
+            $.ajax({
+                url:'auth/get_user',
+                method:'get',
+                success:function (result) {
+                    if (result.code==200){
+                        $("#li_user_name").css('display','block')
+                        $("#li_login").css('display','none')
+                        $("#user_name").text(result.data.userName)
+                    }else {
+                        $("#li_user_name").css('display','none')
+                        $("#li_login").css('display','block')
+                    }
+                }
+            })
+        })
+    }
+
+    loadUser();
+
+    $('#btnSearch').on('click',function(){
+        var type=$('#inputSearch').val();
         $.ajax({
-            url:'auth/get_user',
-            method:'get',
-            success:function (result) {
-                if (result.code==200){
-                    $("#li_user_name").css('display','block')
-                    $("#li_login").css('display','none')
-                    $("#user_name").text(result.data.userName)
-                }else {
-                    $("#li_user_name").css('display','none')
-                    $("#li_login").css('display','block')
+            url:'search?type='+type,
+            method:'post',
+            success:function(result){
+                if(result.code==200){
+                    window.location.href="selCourse.html";
                 }
             }
         })

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>此处为视屏的名字</title>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Ecology Theme">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 谷歌字体 -->
+    <link href="css/css-Poppins300400500600700.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/preloader.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link  rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/sinaFaceAndEffec.css" />
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+
+    <style type="text/css">
+        body{background-color: #222}
+        .video { height: auto;}
+        /*.videolist { position:relative; float:left; width:500px; height:300px; margin-right:50px; margin-top:15px; margin-bottom:30px; }*/
+        .videolist:hover{ cursor: pointer; }
+        .videoed { display:none; width:50px; height:50px; position: absolute; left:45%; top:45%; z-index:99; border-radius:100%; }
+        .videos{ display:none; border: 1px solid #080808; position:fixed; left:50%; top:50%; margin-left:-320px; margin-top:-210px; z-index:100; width:640px; height:360px; }
+        .vclose { position:absolute;right:1%; top:1%; border-radius:100%; cursor: pointer; }
+        .vtit {font-size: 2em;margin-top:15px;}
+        .shadow {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+        }
+        #personal-body{
+            width: 298px;
+            height: 380px;
+            border: 0px solid gray;
+            border-radius: 3px;
+            background-color: #222;
+            padding: 5px 20px;
+            position: absolute;
+            left: 1000px;
+            top:680px;
+        }
+        .head-info {
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            font-size: 18px;
+            float: left;
+        }
+        #head-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin-left: 20%;
+        }
+    </style>
+
+</head>
+<body class="cources_1">
+<!-- Preloader -->
+<!--<div id="loader-wrapper">-->
+<!--    <div id="loader"></div>-->
+<!--    <div class="loader-section section-left"></div>-->
+<!--    <div class="loader-section section-right"></div>-->
+<!--</div>-->
+<!--========={ EcoStudy Nav }========-->
+<header id="header" class="inner_page">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12 header-top-left phone-mail">
+                    <!--					<ul class="list-unstyled">-->
+                    <!--						<li>contact@edustudy.com</li>-->
+                    <!--						<li>Call: +1-3435-2356-222</li>-->
+                    <!--					</ul>                    -->
+                </div>
+                <div class="col-sm-6 col-xs-12 header-top-left">
+                    <ul class="d-flex " id="ul_user_name" >
+                        <li class="nav-item"><a href="Cart.html"><label>购物车</label></a></li>
+                        <li class="nav-item" id="li_user_name" style="display: none"><a href="personal.html"><label id="user_name">123</label></a></li>
+                        <li class="nav-item" id="li_login"><span>欢迎来悟能，</span><a href="login.html"><i class="flaticon-login-button"></i>请登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="eco_nav">
+            <div class="container" style="padding-top: 10px;padding-bottom: 10px">
+                <nav class="navbar navbar-expand-md navbar-light bg-faded">
+                    <a class="navbar-brand" href="javascript:;"><img src="picture/悟能logo.png" alt="logo"></a>
+                    <div class="mr-auto sign-in-option">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><i class="search_btn"><img src="picture/search.png" alt=""></i>
+                                <div id="search">
+                                    <form>
+                                        <input type="search" value="" placeholder=在此输入搜索信息" required="">
+                                        <button type="submit" class="btn btn_common blue">搜索</button>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item"><i class="btn-demo" data-toggle="modal" data-target="#myModal2"><img src="picture/menu_icon.png" alt=""></i></li>
+                        </ul>
+                    </div>
+                </nav><!-- END NAVBAR -->
+            </div>
+        </div>
+    </div>
+</header>  <!-- End Header -->
+
+<section class="login_signup_option">
+    <div class="l-modal is-hidden--off-flow js-modal-shopify">
+        <div class="l-modal__shadow js-modal-hide"></div>
+        <div class="login_popup login_modal_body">
+            <div class="Popup_title d-flex justify-content-between">
+                <h2 class="hidden">&nbsp;</h2>
+                <!-- Nav tabs -->
+                <div class="row">
+                    <div class="col-12 col-lg-12 col-md-12 col-lg-12 login_option_btn">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#login" role="tab">登录</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panel2" role="tab">注册</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                        <!-- Tab panels -->
+                        <div class="tab-content card">
+                            <!--登录-->
+                            <div class="tab-pane fade in show active" id="login" role="tabpanel">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label class="control-label">邮箱</label>
+                                                <input type="email" class="form-control" placeholder="请输入您的邮箱">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label class="control-label">密码</label>
+                                                <input type="password" class="form-control" placeholder="请输入您的密码">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12 d-flex justify-content-between login_option">
+                                            <a href="" title="" class="forget_pass">忘记密码了 ?</a>
+                                            <button type="submit" class="btn btn-default login_btn">登入</button>
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="social_login">
+                                                <div class="social_items">
+                                                    <button class="google_login google">微博登录</button>
+                                                    <button class="google_login facebook">GitHub登录</button>
+                                                    <button class="google_login twitter">QQ登录</button>
+                                                    <button class="google_login linkdin">微信登录</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/登录-->
+                            <!-- 注册 -->
+                            <div class="tab-pane fade" id="panel2" role="tabpanel">
+                                <form action="#" class="register">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label class="control-label">用户名</label>
+                                                <input type="text" class="form-control" placeholder="请输入用户名">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label class="control-label">邮箱</label>
+                                                <input type="email" class="form-control" placeholder="请输入邮箱">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label class="control-label">密码</label>
+                                                <input type="password" class="form-control" placeholder="请输入密码">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12 d-flex justify-content-between login_option">
+                                            <button type="submit" class="btn btn-default login_btn">注册</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/注册-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="demo">
+    <!-- 菜单 -->
+    <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-close"></i></span></button>
+                    <h2 class="modal-title" id="myModalLabel2">
+                        <a href="#"><img src="picture/悟能logo.png" alt=""></a>
+                    </h2>
+                </div>
+                <div class="modal-body">
+                    <div class="bar-nav">
+                        <div class="bar-top">
+                            <h2>精选推荐</h2>
+                            <ul>
+                                <li><img src="image/video-3.png" class="col-sm-6"><a href="javascript:;">IT互联网<i class="flaticon-angle-arrow-pointing-to-right"></i></a></li>
+                                <hr>
+                                <li><img src="image/video_4.jpg" class="col-sm-6"><a href="javascript:;">创作设计<i class="flaticon-angle-arrow-pointing-to-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--========={ 内容 }========-->
+<section class="popular_cources_1">
+    <!--视屏-->
+    <div class="container shadow" style="border: 0px solid dimgray">
+        <div class="video d-flex">
+            <div class="container" style="margin-top: 0px">
+                <div class="videolist" vpath="v1.jpg" ipath="video/wangl.mp4">
+                    <div class="vtit">亮哥授课1</div><div class="vtime">2019-1-11</div>
+                    <video width="1080px" height="500px" controls="controls" autoplay="autoplay">
+                        <source src="video/wangl.mp4" type="video/mp4"/>
+                        <source src="video/wangl.ogg" type="video/ogg"/>
+                    </video>
+                    <img src="image/play.png" class="videoed"/>
+                </div>
+
+
+                <div class="videos"></div>
+
+
+            </div>
+        </div>
+
+        <div class="col-sm-8 d-flex">
+            <h3 style="color: aliceblue">视频简介</h3>
+            <p>秦疆老师Java全栈系列课程之Linux教学
+                从历史，基本命令，项目实战发布上线，全面快速的讲解了Linux的常用知识
+                既可以让初学者快速掌握Linux，也能让Linux老手更全面、系统的学习到更多技术细节
+                狂神说Java系列，努力打造通俗易懂的教程
+                QQ交流群 ： 1084985717</p>
+        </div>
+
+<!--        <span>发表您的看法</span><br>-->
+<!--        <textarea id="text" maxlength="100" class="text" placeholder="您可以输入100个字符" style="resize:none;width:800px;height200px;"></textarea>-->
+<!--        <br>-->
+<!--        <input type="button" value="发&nbsp;&nbsp;表" id="ipt">-->
+        <!--发表的评论-->
+        <div id="content" style="width: 750px; height: auto;margin-left:2px;margin-top:40px;border:0px solid;float:left;">
+            <div class="wrap">
+                <div class="comment">
+                    <div class="head-face">
+                        <img src="image/wangl.jpg"/>
+                    </div>
+                    <div class="content">
+                        <div class="cont-box">
+                            <textarea class="text" placeholder="请输入..."></textarea>
+                        </div>
+                        <div class="tools-box">
+                            <div class="operator-box-btn"><span class="face-icon"  >☺</span><span class="img-icon">▧</span></div>
+                            <div class="submit-btn"><input type="button" onClick="out()"value="提交评论" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="info-show">
+                    <ul>
+                        <li>
+                            <div class="head-face">
+                                <img src="image/wangl.jpg">
+                            </div>
+                            <div class="reply-cont">
+                                <p class="username">Aidan</p>
+                                <p class="comment-body">老铁双击666</p>
+                                <p class="comment-footer">2020年4月15日　回复0　点赞0　转发0</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="personal-body">
+
+            </div>
+
+        </div>
+
+        <div class="clearfix"> </div>
+
+    </div>
+
+    <div id="personal-body" class="shadow">
+        <h4 style="color: white">作者介绍</h4>
+        <hr color="dimgray">
+        <div class="personal-head">
+        <img src="image/wangl.jpg" id="head-image"/>z
+        <span id="account" name="account"></span>
+        </div>
+        <hr color="dimgray">
+        <div class="head-info"><span id="sumPosts"></span>1<br>投稿量</div>
+        <div class="head-info"><span id="sumFans"></span>51<br>粉丝数</div>
+        <div class="head-info" id="sumIDO">0<br>关注的人</div>
+        <div id="Info-button">
+        <input type="button" class="btn btn-success" value="+ 关注" id="addFans"/>&nbsp;&nbsp;
+        <input type="button" class="btn btn-success" value="+ 订阅" id="addinfo"/>
+        </div>
+    </div>
+
+
+</section><!-- 内容 -->
+
+
+    <!--========={ 页脚 }========-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="footer_single">
+                        <img src="picture/悟能logo-white.png" alt="" class="footer_logo img-fluid">
+                        <ul class="list-unstyled contact_info">
+                            <li>shujiankai123@iCloud.com</li>
+                            <li>电话: +86-131-28553-713</li>
+                        </ul>
+                        <div class="social_wraper">
+                            <ul class="social-items d-flex list-unstyled">
+                                <li><a href="#"><i class="fab fa-facebook-f fb-icon"></i></a></li>
+                                <li><a href="#"><i class="fab fa-github github-icon"></i></a></li>
+                                <li><a href="#"><i class="fab fa-tencent-weibo tencent-icon"></i></a></li>
+                                <li><a href="#"><i class="fab fa-weibo weibo-icon"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="footer_single footer_signle_item_2">
+                        <h3 class="footer_item_title">联系我们</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">注册</a></li>
+                            <li><a href="#">帖子</a></li>
+                            <li><a href="#">活动</a></li>
+                            <li><a href="#">联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="footer_single footer_signle_item_3">
+                        <h3 class="footer_item_title">热门帖子</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Spring Boot入门<br></a><span>薪火人</span></li>
+                            <li><a href="#">从UI基础开始<br></a><span>白衣</span></li>
+                            <li><a href="#">高阶Spring<br></a><span>Aidan</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="footer_single footer_signle_item_4">
+                        <h3 class="footer_item_title">支持我们</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">证明文件</a></li>
+                            <li><a href="#">常见问题</a></li>
+                            <li><a href="#">个人意见</a></li>
+                            <li><a href="#">发布状态</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copytight_info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-between">
+                        <p>版权所属 &copy; 悟能课堂</p>
+                        <ul class="nav navbar list-unstyled">
+                            <li><a href="javascript:;">条款</a></li>
+                            <li><a href="#">个人意见</a></li>
+                            <li><a href="#">常见问题</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- 页脚 -->
+
+
+    <!--============= 滚动 ===========-->
+    <section id="scroll-top" class="scroll-top">
+        <h2>&nbsp;</h2>
+        <div class="to-top pos-rtive">
+            <a href="#"><i class="flaticon-up-arrow"></i></a>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/sinaFaceAndEffec.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    //视屏区
+    $('.videolist').each(function(){ //遍历视频列表
+        $(this).hover(function(){ //鼠标移上来后显示播放按钮
+            $(this).find('.videoed').show();
+        },function(){
+            $(this).find('.videoed').hide();
+        });
+        $(this).click(function(){ //这个视频被点击后执行
+            var img = $(this).attr('vpath');//获取视频预览图
+            var video = $(this).attr('ipath');//获取视频路径
+            // $('.videos').html("<video id=\"video\" poster='"+img+"' style='width: 1080px;height: 500px' src='"+video+"' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"image/gb.png\" width=\"25\" height=\"25\"/>");
+            // $('.videos').show();
+        });
+    });
+
+    function close1(){
+        var v = document.getElementById('video');//获取视频节点
+        $('.videos').hide();//点击关闭按钮关闭暂停视频
+        v.pause();
+        $('.videos').html();
+    }
+
+    //评论区
+    // 绑定表情
+    $('.face-icon').sinaEmotion($('.text'));
+    // 测试本地解析
+    function out() {
+        var inputText = $('.text').val();
+        $('#info-show ul').append(reply(AnalyticEmotion(inputText)));
+    }
+
+    var html;
+    function reply(content){
+        html  = '<li>';
+        html += '<div class="head-face">';
+        html += '<img src="image/wangl.jpg" / >';
+        html += '</div>';
+        html += '<div class="reply-cont">';
+        html += '<p class="username">Aidan</p>';
+        html += '<p class="comment-body">'+content+'</p>';
+        html += '<p class="comment-footer">2020年4月15日　回复0　点赞0　转发0</p>';
+        html += '</div>';
+        html += '</li>';
+        return html;
+    }
+
+
+</script>
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
