@@ -283,4 +283,36 @@ public class AdminController extends BaseController {
         List<ESCourse> list = adminService.listESCourse(type);
         return success(list);
     }
+
+    @RequestMapping("/toCourseAddr")
+    public ResultVO toCourseAddr(Integer caId,HttpSession session){
+        System.out.println("caid:"+caId);
+        if(caId!=null){
+            session.setAttribute("caId",caId);
+        }
+        return success(200);
+    }
+    @RequestMapping("/getCourseAddById")
+    public ResultVO<CourseAddr> getCourseAddrById(HttpSession session){
+        Integer caId=(Integer) session.getAttribute("caId");
+        CourseAddr courseAddrById = adminService.getCourseAddrById(caId);
+        return success(courseAddrById);
+    }
+    @RequestMapping("/loadDiscussByCourse")
+    public ResultVO<List<Discuss>> loadDiscussByCourse(HttpSession session){
+        Integer caId=(Integer) session.getAttribute("caId");
+        List<Discuss> discusses = adminService.listDiscussByCourse(caId);
+        return success(discusses);
+    }
+    @RequestMapping("/addDiscussByCid")
+    public ResultVO addDiscussByCid(String text,HttpSession session){
+        Integer caId=(Integer) session.getAttribute("caId");
+        System.out.println("text"+text);
+        Users user =(Users) session.getAttribute("user");
+        if(user!=null){
+            adminService.addDiscuss(caId,user.getUserId(),text);
+            return success(200);
+        }
+        return success(400);
+    }
 }

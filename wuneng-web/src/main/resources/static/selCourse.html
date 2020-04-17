@@ -35,6 +35,9 @@
         .span-font{
             font-size: 20px;
         }
+        .hands{
+            cursor:pointer;
+        }
     </style>
     <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
     <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
@@ -137,8 +140,8 @@
                     if(result.code==200){
                         $.each(result.data,function(i,obj){
                             $('#spanLoad').append(
-                                '<div class="col-sm-3 cle">'
-                                +'<img src="'+obj.img+'" width="150" height="100">'
+                                '<div class="col-sm-3 hands cle">'
+                                +'<img src="'+obj.img+'" width="150" height="100" onclick="getNum(this)" id="'+obj.num+'">'
                                 +'<p>'+obj.name+'</p>'
                                 +'<p>'+obj.introduct+'</p>'
                                 +'</div>'
@@ -163,8 +166,8 @@
                     $('.cle').remove();
                     $.each(result.data,function(i,obj){
                         $('#spanLoad').append(
-                            '<div class="col-sm-3 cle">'
-                            +'<img src="'+obj.img+'" width="150" height="100">'
+                            '<div class="col-sm-3 hands cle">'
+                            +'<img src="'+obj.img+'" width="150" height="100" onclick="getNum(this)" id="'+obj.num+'">'
                             +'<p>'+obj.name+'</p>'
                             +'<p>'+obj.introduct+'</p>'
                             +'</div>'
@@ -174,6 +177,21 @@
             }
         })
     })
+
+    function getNum(i){
+        $(function(){
+            var caId=$(i).prop('id');
+            $.ajax({
+                url:'toCourseAddr?caId='+caId,
+                method:'post',
+                success:function(result){
+                    if(result.code==200){
+                        window.location.href="VideoPage.html";
+                    }
+                }
+            })
+        })
+    }
 
 </script>
 </body>

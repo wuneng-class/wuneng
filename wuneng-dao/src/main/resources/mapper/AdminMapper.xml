@@ -201,5 +201,13 @@
         insert into collection(c_u_id,c_id) values(#{uid},#{cid})
     </insert>
 
+    <select id="getCourseAddrById" resultMap="courseAddrMapper">
+        select ca_id,ca_addr from course_addr where ca_id=#{caId} limit 0,1
+    </select>
+
+    <select id="listDiscussByCourse" resultMap="discussMapper">
+        select u.u_head,u.u_name,d.d_text,d.d_time from user u,discuss d,course c where u.u_id=d.u_id and d.p_id=c.c_id and c.c_id=#{cid} by d_time desc
+    </select>
+
 
 </mapper>

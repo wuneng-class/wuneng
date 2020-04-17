@@ -269,4 +269,22 @@ public class AdminServiceImpl implements AdminService {
             throw new AccessException("查询错误");
         }
     }
+
+    @Override
+    public CourseAddr getCourseAddrById(Integer caId) {
+        try {
+            return adminDao.getCourseAddrById(caId);
+        } catch (Exception e) {
+            throw new AccessException("查询失败");
+        }
+    }
+
+    @Override
+    public List<Discuss> listDiscussByCourse(Integer cid) {
+        try {
+            return adminDao.listDiscussByCourse(cid);
+        } catch (Exception e) {
+            throw new AccessException("查询错误");
+        }
+    }
 }

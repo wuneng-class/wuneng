@@ -55,4 +55,8 @@ public interface AdminService {
     void addCollection(Integer uid,Integer cid);
 
     List<ESCourse> listESCourse(String type);
+
+    CourseAddr getCourseAddrById(Integer caId);
+
+    List<Discuss> listDiscussByCourse(Integer cid);
 }

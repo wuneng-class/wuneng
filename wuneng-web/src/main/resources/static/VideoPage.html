@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>此处为视屏的名字</title>
+    <title>悟能课堂</title>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -33,7 +33,7 @@
     <link  rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/sinaFaceAndEffec.css" />
 
-    <script src="js/jquery-3.2.1.min.js"></script>
+
 
 
     <style type="text/css">
@@ -73,6 +73,7 @@
             margin-left: 20%;
         }
     </style>
+
 
 </head>
 <body class="cources_1">
@@ -254,11 +255,9 @@
             <div class="container" style="margin-top: 0px">
                 <div class="videolist" vpath="v1.jpg" ipath="video/wangl.mp4">
                     <div class="vtit">亮哥授课1</div><div class="vtime">2019-1-11</div>
-                    <video width="1080px" height="500px" controls="controls" autoplay="autoplay">
-                        <source src="video/wangl.mp4" type="video/mp4"/>
-                        <source src="video/wangl.ogg" type="video/ogg"/>
+                    <video id="loadVideo" width="1080px" height="500px" controls="controls" >
                     </video>
-                    <img src="image/play.png" class="videoed"/>
+                    <!--                    <img src="image/play.png" class="videoed"/>-->
                 </div>
 
 
@@ -270,17 +269,15 @@
 
         <div class="col-sm-8 d-flex">
             <h3 style="color: aliceblue">视频简介</h3>
-            <p>秦疆老师Java全栈系列课程之Linux教学
-                从历史，基本命令，项目实战发布上线，全面快速的讲解了Linux的常用知识
-                既可以让初学者快速掌握Linux，也能让Linux老手更全面、系统的学习到更多技术细节
-                狂神说Java系列，努力打造通俗易懂的教程
+            <p>
+                从历史，基本命令，项目实战发布上线，
                 QQ交流群 ： 1084985717</p>
         </div>
 
-<!--        <span>发表您的看法</span><br>-->
-<!--        <textarea id="text" maxlength="100" class="text" placeholder="您可以输入100个字符" style="resize:none;width:800px;height200px;"></textarea>-->
-<!--        <br>-->
-<!--        <input type="button" value="发&nbsp;&nbsp;表" id="ipt">-->
+        <!--        <span>发表您的看法</span><br>-->
+        <!--        <textarea id="text" maxlength="100" class="text" placeholder="您可以输入100个字符" style="resize:none;width:800px;height200px;"></textarea>-->
+        <!--        <br>-->
+        <!--        <input type="button" value="发&nbsp;&nbsp;表" id="ipt">-->
         <!--发表的评论-->
         <div id="content" style="width: 750px; height: auto;margin-left:2px;margin-top:40px;border:0px solid;float:left;">
             <div class="wrap">
@@ -290,17 +287,17 @@
                     </div>
                     <div class="content">
                         <div class="cont-box">
-                            <textarea class="text" placeholder="请输入..."></textarea>
+                            <textarea class="text" id="areaText" placeholder="请输入..."></textarea>
                         </div>
                         <div class="tools-box">
                             <div class="operator-box-btn"><span class="face-icon"  >☺</span><span class="img-icon">▧</span></div>
-                            <div class="submit-btn"><input type="button" onClick="out()"value="提交评论" /></div>
+                            <div class="submit-btn"><input type="button" id="btnDiscuss" value="提交评论" /></div> <!--onClick="out()"-->
                         </div>
                     </div>
                 </div>
                 <div id="info-show">
                     <ul>
-                        <li>
+                        <!--<li>
                             <div class="head-face">
                                 <img src="image/wangl.jpg">
                             </div>
@@ -309,7 +306,7 @@
                                 <p class="comment-body">老铁双击666</p>
                                 <p class="comment-footer">2020年4月15日　回复0　点赞0　转发0</p>
                             </div>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -328,16 +325,16 @@
         <h4 style="color: white">作者介绍</h4>
         <hr color="dimgray">
         <div class="personal-head">
-        <img src="image/wangl.jpg" id="head-image"/>z
-        <span id="account" name="account"></span>
+            <img src="image/wangl.jpg" id="head-image"/>z
+            <span id="account" name="account"></span>
         </div>
         <hr color="dimgray">
         <div class="head-info"><span id="sumPosts"></span>1<br>投稿量</div>
         <div class="head-info"><span id="sumFans"></span>51<br>粉丝数</div>
         <div class="head-info" id="sumIDO">0<br>关注的人</div>
         <div id="Info-button">
-        <input type="button" class="btn btn-success" value="+ 关注" id="addFans"/>&nbsp;&nbsp;
-        <input type="button" class="btn btn-success" value="+ 订阅" id="addinfo"/>
+            <input type="button" class="btn btn-success" value="+ 关注" id="addFans"/>&nbsp;&nbsp;
+            <input type="button" class="btn btn-success" value="+ 订阅" id="addinfo"/>
         </div>
     </div>
 
@@ -345,93 +342,177 @@
 </section><!-- 内容 -->
 
 
-    <!--========={ 页脚 }========-->
-    <footer>
+<!--========={ 页脚 }========-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="footer_single">
+                    <img src="picture/悟能logo-white.png" alt="" class="footer_logo img-fluid">
+                    <ul class="list-unstyled contact_info">
+                        <li>shujiankai123@iCloud.com</li>
+                        <li>电话: +86-131-28553-713</li>
+                    </ul>
+                    <div class="social_wraper">
+                        <ul class="social-items d-flex list-unstyled">
+                            <li><a href="#"><i class="fab fa-facebook-f fb-icon"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github github-icon"></i></a></li>
+                            <li><a href="#"><i class="fab fa-tencent-weibo tencent-icon"></i></a></li>
+                            <li><a href="#"><i class="fab fa-weibo weibo-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="footer_single footer_signle_item_2">
+                    <h3 class="footer_item_title">联系我们</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">注册</a></li>
+                        <li><a href="#">帖子</a></li>
+                        <li><a href="#">活动</a></li>
+                        <li><a href="#">联系</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="footer_single footer_signle_item_3">
+                    <h3 class="footer_item_title">热门帖子</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Spring Boot入门<br></a><span>薪火人</span></li>
+                        <li><a href="#">从UI基础开始<br></a><span>白衣</span></li>
+                        <li><a href="#">高阶Spring<br></a><span>Aidan</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="footer_single footer_signle_item_4">
+                    <h3 class="footer_item_title">支持我们</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">证明文件</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">个人意见</a></li>
+                        <li><a href="#">发布状态</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="copytight_info">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="footer_single">
-                        <img src="picture/悟能logo-white.png" alt="" class="footer_logo img-fluid">
-                        <ul class="list-unstyled contact_info">
-                            <li>shujiankai123@iCloud.com</li>
-                            <li>电话: +86-131-28553-713</li>
-                        </ul>
-                        <div class="social_wraper">
-                            <ul class="social-items d-flex list-unstyled">
-                                <li><a href="#"><i class="fab fa-facebook-f fb-icon"></i></a></li>
-                                <li><a href="#"><i class="fab fa-github github-icon"></i></a></li>
-                                <li><a href="#"><i class="fab fa-tencent-weibo tencent-icon"></i></a></li>
-                                <li><a href="#"><i class="fab fa-weibo weibo-icon"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="footer_single footer_signle_item_2">
-                        <h3 class="footer_item_title">联系我们</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">关于我们</a></li>
-                            <li><a href="#">注册</a></li>
-                            <li><a href="#">帖子</a></li>
-                            <li><a href="#">活动</a></li>
-                            <li><a href="#">联系</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="footer_single footer_signle_item_3">
-                        <h3 class="footer_item_title">热门帖子</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Spring Boot入门<br></a><span>薪火人</span></li>
-                            <li><a href="#">从UI基础开始<br></a><span>白衣</span></li>
-                            <li><a href="#">高阶Spring<br></a><span>Aidan</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                    <div class="footer_single footer_signle_item_4">
-                        <h3 class="footer_item_title">支持我们</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">证明文件</a></li>
-                            <li><a href="#">常见问题</a></li>
-                            <li><a href="#">个人意见</a></li>
-                            <li><a href="#">发布状态</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="copytight_info">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-between">
-                        <p>版权所属 &copy; 悟能课堂</p>
-                        <ul class="nav navbar list-unstyled">
-                            <li><a href="javascript:;">条款</a></li>
-                            <li><a href="#">个人意见</a></li>
-                            <li><a href="#">常见问题</a></li>
-                        </ul>
-                    </div>
+                <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-between">
+                    <p>版权所属 &copy; 悟能课堂</p>
+                    <ul class="nav navbar list-unstyled">
+                        <li><a href="javascript:;">条款</a></li>
+                        <li><a href="#">个人意见</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer><!-- 页脚 -->
+    </div>
+</footer><!-- 页脚 -->
 
 
-    <!--============= 滚动 ===========-->
-    <section id="scroll-top" class="scroll-top">
-        <h2>&nbsp;</h2>
-        <div class="to-top pos-rtive">
-            <a href="#"><i class="flaticon-up-arrow"></i></a>
-        </div>
-    </section>
+<!--============= 滚动 ===========-->
+<section id="scroll-top" class="scroll-top">
+    <h2>&nbsp;</h2>
+    <div class="to-top pos-rtive">
+        <a href="#"><i class="flaticon-up-arrow"></i></a>
+    </div>
+</section>
 
-    <!-- JavaScript -->
+<!-- JavaScript -->
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+    function loadUser(){
+        $(function () {
+            $.ajax({
+                url:'auth/get_user',
+                method:'get',
+                success:function (result) {
+                    if (result.code==200){
+                        $("#li_user_name").css('display','block')
+                        $("#li_login").css('display','none')
+                        $("#user_name").text(result.data.userName)
+                    }else {
+                        $("#li_user_name").css('display','none')
+                        $("#li_login").css('display','block')
+                    }
+                }
+            })
+        })
+    }
 
+    function loadCourseAddr(){
+        $.ajax({
+            url:'getCourseAddById',
+            method:'get',
+            success:function(result){
+                if(result.code==200){
+                    $('#loadVideo').attr('src',result.data.caAddr);
+                }
+            }
+        })
+    }
+
+    function loadSuccess(){
+        $.ajax({
+            url:'loadDiscussByCourse',
+            method:'get',
+            success:function(result){
+                if(result.code==200){
+                    $.each(result.data,function(i,obj){
+                        $.each(obj.listUsers,function(j,obj2){
+                            $('#info-show ul').append(
+                                '<li cel>'
+                                +'<div class="head-face">'
+                                +'<img src="'+obj2.userHead+'" width="50" height="50">'
+                                +'</div>'
+                                +'<div class="reply-cont">'
+                                +'<p class="username">'+obj2.userName+'</p>'
+                                +'<p class="comment-body">'+obj.text+'</p>'
+                                +'<p class="comment-footer">"'+obj.time+'"<span>回复0　点赞0　转发0</span></p>'
+                                +'</div>'
+                                +'</li>'
+                            )
+                        })
+                    })
+                }
+            }
+        })
+    }
+
+    $('#btnDiscuss').on('click',function(){
+        var text=$('#areaText').val();
+        if(text!=null && text!=''){
+            $.ajax({
+                url:'addDiscussByCid?text='+text,
+                method:'post',
+                success:function(result){
+                    if(result.code==200){
+                        $('.cel').remove();
+                        loadSuccess();
+                        $('#areaText').val('');
+                    }else{
+                        alert(result.message);
+                    }
+                }
+            })
+        }else{
+            alert('请输入内容');
+        }
+    })
+
+    loadUser();
+    loadCourseAddr();
+    loadSuccess();
+</script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/sinaFaceAndEffec.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -460,12 +541,12 @@
 
     //评论区
     // 绑定表情
-    $('.face-icon').sinaEmotion($('.text'));
+    // $('.face-icon').sinaEmotion($('.text'));
     // 测试本地解析
-    function out() {
+    /*function out() {
         var inputText = $('.text').val();
         $('#info-show ul').append(reply(AnalyticEmotion(inputText)));
-    }
+    }*/
 
     var html;
     function reply(content){
@@ -487,14 +568,14 @@
 
 
 
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.meanmenu.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/custom.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.meanmenu.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

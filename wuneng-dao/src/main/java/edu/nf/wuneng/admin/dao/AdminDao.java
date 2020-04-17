@@ -54,4 +54,8 @@ public interface AdminDao {
 
     void addDiscuss(@Param("pid") Integer pid,@Param("uid") Integer uid,@Param("text") String text);
     void addCollection(@Param("uid") Integer uid,@Param("cid") Integer cid);
+
+    CourseAddr getCourseAddrById(Integer caId);
+
+    List<Discuss> listDiscussByCourse(Integer cid);
 }
