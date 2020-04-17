@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e74b19ba-c898-41e5-9fee-9258f842a251" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/admin/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/java/edu/nf/wuneng/admin/dao/AdminDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-dao/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-service/src/main/java/edu/nf/wuneng/admin/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/admin/web/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/java/edu/nf/wuneng/admin/web/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/VideoPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/VideoPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/selCourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/wuneng-web/src/main/resources/static/selCourse.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +294,7 @@
       <workItem from="1587039853129" duration="6851000" />
       <workItem from="1587048274676" duration="193000" />
       <workItem from="1587100064741" duration="5564000" />
-      <workItem from="1587124869579" duration="5514000" />
+      <workItem from="1587124869579" duration="6023000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization project">
       <created>1583479332302</created>
@@ -429,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587048424709</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="搜索功能">
+      <created>1587132921264</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1587132921264</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,30 +472,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="426" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.738@0.0.1366.738" timestamp="1586695775729" />
-    <state x="186" y="0" key="CommitChangelistDialog2" timestamp="1587048421598">
+    <state x="186" y="0" key="CommitChangelistDialog2" timestamp="1587132918704">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="186" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1587048421598" />
+    <state x="186" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1587132918704" />
     <state x="395" y="122" key="FileChooserDialogImpl" timestamp="1587108108147">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="395" y="122" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1587108108147" />
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom" timestamp="1587132874632">
+    <state width="1323" height="297" key="GridCell.Tab.0.bottom" timestamp="1587133135321">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1587132874632" />
-    <state width="1323" height="175" key="GridCell.Tab.0.center" timestamp="1587132874632">
+    <state width="1323" height="297" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1587133135321" />
+    <state width="1323" height="297" key="GridCell.Tab.0.center" timestamp="1587133135321">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1587132874632" />
-    <state width="1323" height="175" key="GridCell.Tab.0.left" timestamp="1587132874632">
+    <state width="1323" height="297" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1587133135321" />
+    <state width="1323" height="297" key="GridCell.Tab.0.left" timestamp="1587133135321">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1587132874632" />
-    <state width="1323" height="175" key="GridCell.Tab.0.right" timestamp="1587132874632">
+    <state width="1323" height="297" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1587133135321" />
+    <state width="1323" height="297" key="GridCell.Tab.0.right" timestamp="1587133135321">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="175" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1587132874632" />
+    <state width="1323" height="297" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1587133135321" />
     <state width="1323" height="165" key="GridCell.Tab.1.bottom" timestamp="1583926229130">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -524,10 +524,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="149" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1587131565660" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1587048432817">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1587132928664">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1587048432817" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1587132928664" />
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586690735021">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
